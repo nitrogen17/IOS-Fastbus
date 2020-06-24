@@ -21,19 +21,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eal-kj-qIE">
+                                <rect key="frame" x="157.5" y="378" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.37373542789999997" green="0.84366494420000004" blue="0.80000066759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ybM-Us-hDQ"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uG0-zN-fvk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="eal-kj-qIE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dwa-6t-PuQ"/>
+                            <constraint firstItem="eal-kj-qIE" firstAttribute="top" secondItem="ZSv-RY-O18" secondAttribute="bottom" constant="34" id="kv8-4p-grH"/>
                             <constraint firstItem="ZSv-RY-O18" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="utp-ON-0oq"/>
                             <constraint firstItem="ZSv-RY-O18" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wZy-yf-kmh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="sry-hZ-21b"/>
+                    <connections>
+                        <segue destination="czE-9e-gKU" kind="show" identifier="goToLogin" id="org-jn-JbC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="115.59220389805098"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5YI-rX-kwS">
+            <objects>
+                <viewController id="czE-9e-gKU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Azy-g1-Tzy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FW-KE-ym2">
+                                <rect key="frame" x="145" y="323" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0FW-KE-ym2" firstAttribute="centerX" secondItem="Azy-g1-Tzy" secondAttribute="centerX" id="B4U-4S-LHs"/>
+                            <constraint firstItem="0FW-KE-ym2" firstAttribute="centerY" secondItem="Azy-g1-Tzy" secondAttribute="centerY" id="MsL-2a-CxT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e0w-H0-xHo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v0W-gy-eX9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t0g-as-Af9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1990" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4se-ow-9ld">
