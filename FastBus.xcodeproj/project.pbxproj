@@ -13,6 +13,7 @@
 		8C1377A424A0E0BD002839FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1377A224A0E0BD002839FA /* Main.storyboard */; };
 		8C1377A624A0E0BD002839FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C1377A524A0E0BD002839FA /* Assets.xcassets */; };
 		8C1377A924A0E0BD002839FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1377A724A0E0BD002839FA /* LaunchScreen.storyboard */; };
+		8CDA4CEE24A4DFB500DD5251 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8CDA4CED24A4DFB500DD5251 /* Montserrat-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		8C1377A524A0E0BD002839FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C1377A824A0E0BD002839FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C1377AA24A0E0BD002839FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CDA4CED24A4DFB500DD5251 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Medium.otf"; path = "../../ASSETS/montserrat/Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		8CDA4CF024A4DFBA00DD5251 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +63,21 @@
 				8C13779E24A0E0BD002839FA /* SceneDelegate.swift */,
 				8C1377A024A0E0BD002839FA /* ViewController.swift */,
 				8C1377A224A0E0BD002839FA /* Main.storyboard */,
+				8CDA4CED24A4DFB500DD5251 /* Montserrat-Medium.otf */,
 				8C1377A524A0E0BD002839FA /* Assets.xcassets */,
+				8CDA4CEF24A4DFBA00DD5251 /* Font */,
 				8C1377A724A0E0BD002839FA /* LaunchScreen.storyboard */,
 				8C1377AA24A0E0BD002839FA /* Info.plist */,
 			);
 			path = FastBus;
+			sourceTree = "<group>";
+		};
+		8CDA4CEF24A4DFBA00DD5251 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				8CDA4CF024A4DFBA00DD5251 /* Montserrat-Medium.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1377A924A0E0BD002839FA /* LaunchScreen.storyboard in Resources */,
+				8CDA4CEE24A4DFB500DD5251 /* Montserrat-Medium.otf in Resources */,
 				8C1377A624A0E0BD002839FA /* Assets.xcassets in Resources */,
 				8C1377A424A0E0BD002839FA /* Main.storyboard in Resources */,
 			);
