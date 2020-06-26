@@ -14,7 +14,36 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load_background" translatesAutoresizingMaskIntoConstraints="NO" id="466-XB-Fu1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="HBQ-ra-Dnf">
+                                <rect key="frame" x="152.5" y="289" width="70" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="7L6-Nc-d61"/>
+                                    <constraint firstAttribute="width" constant="70" id="HvO-5a-Jwt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load_city" translatesAutoresizingMaskIntoConstraints="NO" id="4B0-Vb-APX">
+                                <rect key="frame" x="0.0" y="525.5" width="375" height="141.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141.30000000000001" id="D6c-0g-KpP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="4B0-Vb-APX" secondAttribute="bottom" id="7gR-ZB-HwD"/>
+                            <constraint firstAttribute="trailing" secondItem="4B0-Vb-APX" secondAttribute="trailing" id="DSp-e9-Ykc"/>
+                            <constraint firstItem="HBQ-ra-Dnf" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="NnD-Ai-IDD"/>
+                            <constraint firstItem="466-XB-Fu1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="UEa-TU-HmT"/>
+                            <constraint firstAttribute="trailing" secondItem="466-XB-Fu1" secondAttribute="trailing" id="dFj-aq-ElD"/>
+                            <constraint firstAttribute="bottom" secondItem="466-XB-Fu1" secondAttribute="bottom" id="eqJ-v9-FVS"/>
+                            <constraint firstItem="HBQ-ra-Dnf" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="prK-ZN-Jgm"/>
+                            <constraint firstItem="466-XB-Fu1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="qPV-zl-iDn"/>
+                            <constraint firstItem="4B0-Vb-APX" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="tXO-ik-0cT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -23,4 +52,9 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="load_background" width="1125" height="2436"/>
+        <image name="load_city" width="1125" height="425"/>
+        <image name="logo" width="219" height="267"/>
+    </resources>
 </document>

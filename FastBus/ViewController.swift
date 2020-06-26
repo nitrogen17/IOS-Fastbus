@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        view.backgroundColor = .black
+//        view.backgroundColor = .black
     }
 
     @IBAction func clickButton(_ sender: UIButton) {
