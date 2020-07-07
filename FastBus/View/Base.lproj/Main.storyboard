@@ -39,7 +39,7 @@
                                 <rect key="frame" x="177" y="559.5" width="60" height="30"/>
                                 <color key="backgroundColor" red="0.37373542789999997" green="0.84366494420000004" blue="0.80000066759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="ybM-Us-hDQ"/>
+                                    <constraint firstAttribute="width" constant="60" id="ybM-Us-hDQ"/>
                                 </constraints>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -169,7 +169,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxk-qN-vSZ">
-                                <rect key="frame" x="174.5" y="652.5" width="65" height="57"/>
+                                <rect key="frame" x="178" y="652.5" width="58" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="GdP-LW-ajD"/>
                                     <constraint firstAttribute="height" constant="57" id="MIg-30-PnU"/>
