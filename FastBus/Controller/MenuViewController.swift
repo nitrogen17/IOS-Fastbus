@@ -12,6 +12,8 @@ class MenuViewController: UIViewController {
     
     /// Reference from IB
     @IBOutlet weak var topViewRef: UIView!
+    @IBOutlet weak var topPanel: UIView!
+    @IBOutlet weak var bottomViewRef: UIView!
     
     
     private var shadowLayer: CAShapeLayer!
@@ -31,6 +33,16 @@ class MenuViewController: UIViewController {
         topViewRef.layer.shadowOpacity = 0.1
         topViewRef.layer.shadowOffset = .zero
         topViewRef.layer.shadowRadius = 10
+        
+        topPanel.layer.shadowColor = UIColor.black.cgColor
+        topPanel.layer.shadowOpacity = 0.15
+        topPanel.layer.shadowRadius = 10
+        
+        bottomViewRef.layer.shadowColor = UIColor.black.cgColor
+        bottomViewRef.layer.shadowOpacity = 0.1
+        bottomViewRef.layer.shadowOffset = .zero
+        bottomViewRef.layer.shadowRadius = 10
+        
         
         /*
          topViewRef.layer.shadowColor = UIColor.black.cgColor

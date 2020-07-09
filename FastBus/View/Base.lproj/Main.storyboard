@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ChR-wv-x7V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YUM-Rk-kwJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eal-kj-qIE">
-                                <rect key="frame" x="177" y="559.5" width="60" height="30"/>
+                                <rect key="frame" x="177" y="560" width="60" height="30"/>
                                 <color key="backgroundColor" red="0.37373542789999997" green="0.84366494420000004" blue="0.80000066759999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="ybM-Us-hDQ"/>
@@ -49,13 +49,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuV-xG-gj6">
-                                <rect key="frame" x="204.5" y="437" width="5" height="22.5"/>
+                                <rect key="frame" x="204.5" y="436.5" width="5" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Uhm-Tv-Nhx">
-                                <rect key="frame" x="172" y="335" width="70" height="89"/>
+                                <rect key="frame" x="172" y="334.5" width="70" height="89"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="89" id="L3M-7f-TNg"/>
                                     <constraint firstAttribute="width" constant="70" id="hDo-6g-axu"/>
@@ -65,7 +65,7 @@
                                 <rect key="frame" x="197" y="438" width="20" height="20"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redirecting..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6A-dR-s19">
-                                <rect key="frame" x="165.5" y="469.5" width="83" height="16.5"/>
+                                <rect key="frame" x="160.5" y="470" width="93" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -169,7 +169,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxk-qN-vSZ">
-                                <rect key="frame" x="178" y="652.5" width="58" height="57"/>
+                                <rect key="frame" x="174.5" y="652.5" width="65" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="GdP-LW-ajD"/>
                                     <constraint firstAttribute="height" constant="57" id="MIg-30-PnU"/>
@@ -270,13 +270,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2N-FH-ehI" userLabel="Top View">
                                 <rect key="frame" x="16" y="155" width="382" height="215"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ZK-Ak-tK7" userLabel="Tope Pane View">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="61"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="61" id="s2R-jc-2mc"/>
-                                        </constraints>
-                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRU-CZ-pEy" userLabel="Left Pane View">
                                         <rect key="frame" x="0.0" y="61" width="55" height="154"/>
                                         <subviews>
@@ -306,6 +299,13 @@
                                             <constraint firstAttribute="bottom" secondItem="fBQ-Km-Ip6" secondAttribute="bottom" constant="30" id="Jb1-Sm-cgf"/>
                                             <constraint firstItem="XNx-3u-ayt" firstAttribute="top" secondItem="PRU-CZ-pEy" secondAttribute="top" constant="40" id="gpy-48-pRt"/>
                                             <constraint firstAttribute="width" constant="55" id="u5q-6E-29L"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ZK-Ak-tK7" userLabel="Tope Pane View">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="61"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="61" id="s2R-jc-2mc"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0o-Sf-KBa" userLabel="Top Body View">
@@ -495,7 +495,6 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="bottom" secondItem="oS4-sk-TwH" secondAttribute="bottom" id="0Vm-0F-Ljz"/>
                                                                             <constraint firstItem="oS4-sk-TwH" firstAttribute="top" secondItem="Sd9-2Y-51R" secondAttribute="top" id="1aK-AP-VhR"/>
@@ -525,7 +524,6 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VqU-ew-y9c">
                                                 <rect key="frame" x="0.0" y="74.5" width="100" height="73.5"/>
-                                                <color key="backgroundColor" red="0.49803921569999998" green="0.55294117649999996" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -572,7 +570,6 @@
                                                                                 </subviews>
                                                                             </stackView>
                                                                         </subviews>
-                                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstItem="mM2-wD-qty" firstAttribute="leading" secondItem="gBq-Sd-qIL" secondAttribute="leading" id="3y8-4P-o9D"/>
                                                                             <constraint firstItem="mM2-wD-qty" firstAttribute="top" secondItem="gBq-Sd-qIL" secondAttribute="top" id="R8O-nn-HuF"/>
@@ -602,7 +599,6 @@
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kx-TA-rDq">
                                                 <rect key="frame" x="0.0" y="74.5" width="100" height="73.5"/>
-                                                <color key="backgroundColor" red="0.49803921569999998" green="0.55294117649999996" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -610,7 +606,7 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="LS3-uj-jxi" firstAttribute="top" secondItem="WOU-wi-dZM" secondAttribute="top" id="3dP-tq-1zI"/>
                                     <constraint firstAttribute="bottom" secondItem="vbu-jQ-loC" secondAttribute="bottom" id="CiH-XH-hvU"/>
@@ -650,6 +646,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="oHq-mQ-2lf"/>
                     <connections>
+                        <outlet property="bottomViewRef" destination="WOU-wi-dZM" id="dzQ-3O-OT2"/>
+                        <outlet property="topPanel" destination="2ZK-Ak-tK7" id="uHi-HX-VbR"/>
                         <outlet property="topViewRef" destination="F2N-FH-ehI" id="ccO-JE-h7v"/>
                     </connections>
                 </viewController>
