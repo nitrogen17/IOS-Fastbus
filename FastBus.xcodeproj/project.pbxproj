@@ -17,6 +17,7 @@
 		8C5F15D024AF54D80078A2A6 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5F15CF24AF54D80078A2A6 /* Montserrat-SemiBold.otf */; };
 		8C5F15D224AF58210078A2A6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F15D124AF58210078A2A6 /* MenuViewController.swift */; };
 		8C81B76324ACBBE6008C953D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81B76224ACBBE6008C953D /* LoginViewController.swift */; };
+		8CC3459024B8B2DF00DB2BF9 /* BusListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3458F24B8B2DF00DB2BF9 /* BusListingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		8C5F15CF24AF54D80078A2A6 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		8C5F15D124AF58210078A2A6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8C81B76224ACBBE6008C953D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8CC3458F24B8B2DF00DB2BF9 /* BusListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListingViewController.swift; sourceTree = "<group>"; };
 		8CDA4CF024A4DFBA00DD5251 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 			children = (
 				8C1377A024A0E0BD002839FA /* ViewController.swift */,
 				8C81B76224ACBBE6008C953D /* LoginViewController.swift */,
+				8CC3458F24B8B2DF00DB2BF9 /* BusListingViewController.swift */,
 				8C5F15D124AF58210078A2A6 /* MenuViewController.swift */,
 			);
 			path = Controller;
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC3459024B8B2DF00DB2BF9 /* BusListingViewController.swift in Sources */,
 				8C1377A124A0E0BD002839FA /* ViewController.swift in Sources */,
 				8C5F15D224AF58210078A2A6 /* MenuViewController.swift in Sources */,
 				8C13779D24A0E0BD002839FA /* AppDelegate.swift in Sources */,

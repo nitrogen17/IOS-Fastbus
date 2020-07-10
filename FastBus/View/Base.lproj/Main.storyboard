@@ -655,6 +655,33 @@
             </objects>
             <point key="canvasLocation" x="2602.898550724638" y="115.17857142857142"/>
         </scene>
+        <!--Bus Listing View Controller-->
+        <scene sceneID="1Y2-nc-R1Q">
+            <objects>
+                <viewController id="cVv-aS-VYM" customClass="BusListingViewController" customModule="FastBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pa8-zd-RWJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Listing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbK-7e-6nH">
+                                <rect key="frame" x="136.5" y="430" width="141.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pbK-7e-6nH" firstAttribute="centerY" secondItem="Pa8-zd-RWJ" secondAttribute="centerY" id="4PF-5c-ejv"/>
+                            <constraint firstItem="pbK-7e-6nH" firstAttribute="centerX" secondItem="Pa8-zd-RWJ" secondAttribute="centerX" id="psg-bF-6qN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g6X-hQ-uwD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ka-JD-vW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="312" y="795"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4se-ow-9ld">
             <objects>

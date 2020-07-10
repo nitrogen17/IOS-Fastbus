@@ -35,7 +35,7 @@ class MenuViewController: UIViewController {
         topViewRef.layer.shadowRadius = 10
         
         topPanel.layer.shadowColor = UIColor.black.cgColor
-        topPanel.layer.shadowOpacity = 0.15
+        topPanel.layer.shadowOpacity = 0.1
         topPanel.layer.shadowRadius = 10
         
         bottomViewRef.layer.shadowColor = UIColor.black.cgColor
