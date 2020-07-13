@@ -626,6 +626,9 @@
                                 <state key="normal" title="Search" backgroundImage="menu_button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="didClickSearch:" destination="ChR-wv-x7V" eventType="touchUpInside" id="FaF-nw-1uc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -649,6 +652,7 @@
                         <outlet property="bottomViewRef" destination="WOU-wi-dZM" id="dzQ-3O-OT2"/>
                         <outlet property="topPanel" destination="2ZK-Ak-tK7" id="uHi-HX-VbR"/>
                         <outlet property="topViewRef" destination="F2N-FH-ehI" id="ccO-JE-h7v"/>
+                        <segue destination="cVv-aS-VYM" kind="show" identifier="goToBusListing" id="09v-aB-dUa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPh-JI-ewJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -677,10 +681,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g6X-hQ-uwD"/>
                     </view>
+                    <navigationItem key="navigationItem" id="27C-GY-juX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ka-JD-vW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="312" y="795"/>
+            <point key="canvasLocation" x="312" y="839"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4se-ow-9ld">

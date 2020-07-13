@@ -53,4 +53,9 @@ class MenuViewController: UIViewController {
          */
         
     }
+    
+    @IBAction func didClickSearch(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToBusListing", sender: self)
+    }
+    
 }
