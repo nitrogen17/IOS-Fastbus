@@ -623,7 +623,7 @@
                                     <constraint firstAttribute="height" constant="45" id="4KC-aq-8YW"/>
                                     <constraint firstAttribute="width" constant="235" id="Ryr-Zr-0r4"/>
                                 </constraints>
-                                <state key="normal" title="Search" backgroundImage="menu_button">
+                                <state key="normal" title="Search" backgroundImage="green-banner">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -708,6 +708,7 @@
     <resources>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="green-banner" width="712" height="137"/>
         <image name="line_vertical" width="2" height="150"/>
         <image name="load_background" width="1125" height="2436"/>
         <image name="load_city" width="1125" height="425"/>
@@ -715,7 +716,6 @@
         <image name="login_button" width="898" height="171"/>
         <image name="login_logo" width="214" height="259"/>
         <image name="logo" width="219" height="267"/>
-        <image name="menu_button" width="746" height="177"/>
         <image name="menu_header" width="1125" height="483"/>
         <image name="person" catalog="system" width="128" height="117"/>
     </resources>
