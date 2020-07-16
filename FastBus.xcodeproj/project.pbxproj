@@ -73,7 +73,6 @@
 				8C5F15D324AF582E0078A2A6 /* Controller */,
 				8C1377A524A0E0BD002839FA /* Assets.xcassets */,
 				8CDA4CEF24A4DFBA00DD5251 /* Font */,
-				8C1377A724A0E0BD002839FA /* LaunchScreen.storyboard */,
 				8C1377AA24A0E0BD002839FA /* Info.plist */,
 			);
 			path = FastBus;
@@ -93,6 +92,7 @@
 		8C5F15D424AF58490078A2A6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8C1377A724A0E0BD002839FA /* LaunchScreen.storyboard */,
 				8C1377A224A0E0BD002839FA /* Main.storyboard */,
 			);
 			path = View;
