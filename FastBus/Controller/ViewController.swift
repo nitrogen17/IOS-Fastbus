@@ -9,34 +9,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     /// Reference from Interface Builder
     @IBOutlet weak var appTitle: UILabel!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var redirectingLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         loginButton.isHidden = true
         redirectingLabel.isHidden = true
-        
+
         /// Manual Animates FlashChat Text using Loop
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            
+
             self.spinner.stopAnimating()
-            
+
             self.appTitle.text = ""
             var charIndex = 0.0
             let titleText = "FASTBUS APP"
             for letter in titleText {
-                Timer.scheduledTimer(withTimeInterval: 0.2 * charIndex, repeats: false) { (timer) in
+                Timer.scheduledTimer(withTimeInterval: 0.2 * charIndex, repeats: false) { (_) in
                     self.appTitle.text?.append(letter)
                 }
                 charIndex += 1
             }
-            
+
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self.redirectingLabel.isHidden = false
             }
@@ -45,10 +45,9 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
     @IBAction func clickButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToLogin", sender: self)
     }
-    
-}
 
+}

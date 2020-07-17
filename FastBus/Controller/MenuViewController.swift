@@ -9,41 +9,37 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-    
+
     /// Reference from IB
     @IBOutlet weak var topViewRef: UIView!
     @IBOutlet weak var topPanel: UIView!
     @IBOutlet weak var bottomViewRef: UIView!
-    
-    
+
     private var shadowLayer: CAShapeLayer!
     private var cornerRadius: CGFloat = 25.0
     private var fillColor: UIColor = .blue // the color applied to the shadowLayer, rather than the view's backgroundColor
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+
         /// Add Corner Radius in UIView
         //topViewRef.clipsToBounds = true
         //topViewRef.layer.cornerRadius = 8
-        
-            
+
         topViewRef.layer.shadowColor = UIColor.black.cgColor
         topViewRef.layer.shadowOpacity = 0.1
         topViewRef.layer.shadowOffset = .zero
         topViewRef.layer.shadowRadius = 10
-        
+
         topPanel.layer.shadowColor = UIColor.black.cgColor
         topPanel.layer.shadowOpacity = 0.1
         topPanel.layer.shadowRadius = 10
-        
+
         bottomViewRef.layer.shadowColor = UIColor.black.cgColor
         bottomViewRef.layer.shadowOpacity = 0.1
         bottomViewRef.layer.shadowOffset = .zero
         bottomViewRef.layer.shadowRadius = 10
-        
-        
+
         /*
          topViewRef.layer.shadowColor = UIColor.black.cgColor
          topViewRef.layer.shadowOffset = CGSize(width: 3, height: 3)
@@ -51,11 +47,11 @@ class MenuViewController: UIViewController {
          topViewRef.layer.shadowRadius = 4.0
          
          */
-        
+
     }
-    
+
     @IBAction func didClickSearch(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToBusListing", sender: self)
     }
-    
+
 }

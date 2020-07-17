@@ -1,0 +1,7 @@
+disabled_rules:
+  - line_length
+
+excluded:
+  - Pods
+  - FastBus/AppDelegate.swift
+  - FastBus/SceneDelegate.swift
