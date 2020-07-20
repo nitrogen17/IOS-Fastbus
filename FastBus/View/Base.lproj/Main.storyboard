@@ -142,19 +142,13 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qp0-jp-tOb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastbus-bus" translatesAutoresizingMaskIntoConstraints="NO" id="qp0-jp-tOb">
                                 <rect key="frame" x="157" y="189.5" width="100" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86" id="00r-HI-gF4"/>
                                     <constraint firstAttribute="width" constant="100" id="xNv-SQ-e6u"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FASTBUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPp-sc-GhY">
-                                <rect key="frame" x="172" y="282.5" width="70.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8B-3T-LCL">
                                 <rect key="frame" x="57" y="578" width="300" height="57"/>
                                 <constraints>
@@ -169,7 +163,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxk-qN-vSZ">
-                                <rect key="frame" x="178" y="652.5" width="58" height="57"/>
+                                <rect key="frame" x="174.5" y="652.5" width="65" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="GdP-LW-ajD"/>
                                     <constraint firstAttribute="height" constant="57" id="MIg-30-PnU"/>
@@ -177,6 +171,13 @@
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
                                 <state key="normal" title="Sign Up"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fastbus-title" translatesAutoresizingMaskIntoConstraints="NO" id="gZc-Hs-g3y">
+                                <rect key="frame" x="157" y="264" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ryp-bl-aDe"/>
+                                    <constraint firstAttribute="width" constant="100" id="vpx-dz-BWi"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -184,13 +185,13 @@
                             <constraint firstItem="MXa-ho-v8r" firstAttribute="centerY" secondItem="Azy-g1-Tzy" secondAttribute="centerY" id="7vI-M7-ddV"/>
                             <constraint firstItem="MXa-ho-v8r" firstAttribute="centerX" secondItem="Azy-g1-Tzy" secondAttribute="centerX" id="EI9-Ed-FQF"/>
                             <constraint firstItem="Nxk-qN-vSZ" firstAttribute="centerX" secondItem="Azy-g1-Tzy" secondAttribute="centerX" id="HbA-Cj-sd1"/>
-                            <constraint firstItem="nPp-sc-GhY" firstAttribute="centerX" secondItem="Azy-g1-Tzy" secondAttribute="centerX" id="Wie-hK-bqz"/>
+                            <constraint firstItem="MXa-ho-v8r" firstAttribute="top" secondItem="gZc-Hs-g3y" secondAttribute="bottom" constant="74" id="OXD-q9-kRy"/>
+                            <constraint firstItem="gZc-Hs-g3y" firstAttribute="centerX" secondItem="Azy-g1-Tzy" secondAttribute="centerX" id="S7r-BD-w9q"/>
+                            <constraint firstItem="MXa-ho-v8r" firstAttribute="top" secondItem="qp0-jp-tOb" secondAttribute="bottom" constant="92.5" id="aKO-bT-sbW"/>
                             <constraint firstItem="L8B-3T-LCL" firstAttribute="top" secondItem="MXa-ho-v8r" secondAttribute="bottom" constant="50" id="bt2-3x-Tf1"/>
-                            <constraint firstItem="nPp-sc-GhY" firstAttribute="top" secondItem="qp0-jp-tOb" secondAttribute="bottom" constant="7" id="cT2-9Q-mxY"/>
                             <constraint firstItem="MXa-ho-v8r" firstAttribute="leading" secondItem="e0w-H0-xHo" secondAttribute="leading" constant="38" id="dYQ-pP-vv6"/>
                             <constraint firstItem="Nxk-qN-vSZ" firstAttribute="top" secondItem="L8B-3T-LCL" secondAttribute="bottom" constant="17.5" id="rjF-bc-0mQ"/>
                             <constraint firstItem="e0w-H0-xHo" firstAttribute="trailing" secondItem="MXa-ho-v8r" secondAttribute="trailing" constant="38" id="tSj-LT-Gfc"/>
-                            <constraint firstItem="MXa-ho-v8r" firstAttribute="top" secondItem="nPp-sc-GhY" secondAttribute="bottom" constant="66" id="vNG-bl-oCa"/>
                             <constraint firstItem="L8B-3T-LCL" firstAttribute="centerX" secondItem="Azy-g1-Tzy" secondAttribute="centerX" id="xyT-c6-byr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e0w-H0-xHo"/>
@@ -709,13 +710,14 @@
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="fastbus-banner" width="409" height="107"/>
+        <image name="fastbus-bus" width="512" height="512"/>
+        <image name="fastbus-title" width="220" height="51"/>
         <image name="green-banner" width="712" height="137"/>
         <image name="line_vertical" width="2" height="150"/>
         <image name="load_background" width="1125" height="2436"/>
         <image name="load_city" width="1125" height="425"/>
         <image name="location" width="38" height="51"/>
         <image name="login_button" width="898" height="171"/>
-        <image name="login_logo" width="214" height="259"/>
         <image name="menu_header" width="1125" height="483"/>
         <image name="person" catalog="system" width="128" height="117"/>
     </resources>
