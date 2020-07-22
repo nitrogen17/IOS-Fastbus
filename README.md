@@ -26,15 +26,6 @@ Online Bus Seat Reservation using Swift.
 #### CocoaPods
 You can use [CocoaPods](http://cocoapods.org/) to install `YourLibrary` by adding it to your `Podfile`:
 
-```ruby
-platform :ios, '8.0'
-use_frameworks!
-pod 'YourLibrary'
-```
-
-To get the full benefits import `YourLibrary` wherever you import UIKit
-
-
 ## Project Installation
 
 #### Manually
