@@ -24,7 +24,10 @@ Online Bus Seat Reservation using Swift.
 **You can skip this if you have CocoaPods installed in your MAC**
 
 #### CocoaPods
-You can use [CocoaPods](http://cocoapods.org/) to install `YourLibrary` by adding it to your `Podfile`:
+Include this Pod in your Pod File:
+```
+pod 'SwiftLint'
+```
 
 ## Project Installation
 
