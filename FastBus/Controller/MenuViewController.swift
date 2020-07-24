@@ -15,9 +15,23 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var topPanel: UIView!
     @IBOutlet weak var bottomViewRef: UIView!
 
+    /// Dropdown Outlets
+    @IBOutlet weak var departureTextField: UILabel!
+    @IBOutlet weak var arrivalsTextField: UILabel!
+    @IBOutlet weak var departureButton: UIButton!
+    @IBOutlet weak var arrivalsButton: UIButton!
+
+    /// Form Properties
     private var shadowLayer: CAShapeLayer!
     private var cornerRadius: CGFloat = 25.0
     private var fillColor: UIColor = .blue // the color applied to the shadowLayer, rather than the view's backgroundColor
+
+    /// PickerView Properties
+    var arrayRoute = ["Naga", "Daet", "Legazpi", "Lagonoy", "Sorsogon", "Manila", "Pasay", "Cubao"]
+    var selectedRoute: String? = ""
+
+    let picker = UIPickerView.init()
+    let toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,19 +53,49 @@ class MenuViewController: UIViewController {
         bottomViewRef.layer.shadowOpacity = 0.1
         bottomViewRef.layer.shadowOffset = .zero
         bottomViewRef.layer.shadowRadius = 10
-
-        /*
-         topViewRef.layer.shadowColor = UIColor.black.cgColor
-         topViewRef.layer.shadowOffset = CGSize(width: 3, height: 3)
-         topViewRef.layer.shadowOpacity = 0.7
-         topViewRef.layer.shadowRadius = 4.0
-         
-         */
-
     }
 
     @IBAction func didClickSearch(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToBusListing", sender: self)
+    }
+
+    @IBAction func didClickDepartureButton(_ sender: UIButton) {
+        picker.delegate = self
+        picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
+        picker.backgroundColor = UIColor.white
+        self.view.addSubview(picker)
+
+        toolBar.items = [UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.dismissPickerView))]
+        self.view.addSubview(toolBar)
+    }
+
+    @IBAction func didClickArrivalsButton(_ sender: UIButton) {
+    }
+
+    @objc func dismissPickerView() {
+        toolBar.removeFromSuperview()
+        picker.removeFromSuperview()
+    }
+
+}
+
+extension MenuViewController: UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return arrayRoute.count
+    }
+
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return arrayRoute[row]
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedRoute = arrayRoute[row]
+        departureTextField.text = selectedRoute
     }
 
 }
