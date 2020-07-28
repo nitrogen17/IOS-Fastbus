@@ -269,7 +269,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2N-FH-ehI" userLabel="Top View">
-                                <rect key="frame" x="16" y="155" width="382" height="215"/>
+                                <rect key="frame" x="16" y="199" width="382" height="215"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PRU-CZ-pEy" userLabel="Left Pane View">
                                         <rect key="frame" x="0.0" y="61" width="55" height="154"/>
@@ -460,7 +460,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOU-wi-dZM" userLabel="Bottom View">
-                                <rect key="frame" x="16" y="383" width="382" height="148"/>
+                                <rect key="frame" x="16" y="427" width="382" height="148"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="LS3-uj-jxi" userLabel="Left Stack View">
                                         <rect key="frame" x="25" y="0.0" width="100" height="148"/>
@@ -625,7 +625,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOz-6o-ysw">
-                                <rect key="frame" x="89.5" y="569" width="235" height="45"/>
+                                <rect key="frame" x="89.5" y="613" width="235" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="4KC-aq-8YW"/>
                                     <constraint firstAttribute="width" constant="235" id="Ryr-Zr-0r4"/>
@@ -701,9 +701,10 @@
         <!--Navigation Controller-->
         <scene sceneID="4se-ow-9ld">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="YUM-Rk-kwJ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YUM-Rk-kwJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ALx-Lj-h6A">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         loginButton.isHidden = true
         redirectingLabel.isHidden = true
 
+        self.navigationController?.isNavigationBarHidden = true
+
         /// Manual Animates FlashChat Text using Loop
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
 

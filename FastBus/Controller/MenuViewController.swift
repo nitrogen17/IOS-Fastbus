@@ -40,6 +40,8 @@ class MenuViewController: UIViewController {
         //topViewRef.clipsToBounds = true
         //topViewRef.layer.cornerRadius = 8
 
+        self.navigationController?.isNavigationBarHidden = true
+
         topViewRef.layer.shadowColor = UIColor.black.cgColor
         topViewRef.layer.shadowOpacity = 0.1
         topViewRef.layer.shadowOffset = .zero
