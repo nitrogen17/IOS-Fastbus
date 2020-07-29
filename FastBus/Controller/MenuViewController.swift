@@ -30,6 +30,8 @@ class MenuViewController: UIViewController {
     var arrayRoute = ["Naga", "Daet", "Legazpi", "Lagonoy", "Sorsogon", "Manila", "Pasay", "Cubao"]
     var selectedRoute: String? = ""
 
+    var locationFlag: Int = 0
+
     let picker = UIPickerView.init()
     let toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
 
@@ -62,6 +64,9 @@ class MenuViewController: UIViewController {
     }
 
     @IBAction func didClickDepartureButton(_ sender: UIButton) {
+
+        locationFlag = 1
+
         picker.delegate = self
         picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
         picker.backgroundColor = UIColor.white
@@ -72,6 +77,16 @@ class MenuViewController: UIViewController {
     }
 
     @IBAction func didClickArrivalsButton(_ sender: UIButton) {
+
+        locationFlag = 2
+
+        picker.delegate = self
+        picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
+        picker.backgroundColor = UIColor.white
+        self.view.addSubview(picker)
+
+        toolBar.items = [UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.dismissPickerView))]
+        self.view.addSubview(toolBar)
     }
 
     @objc func dismissPickerView() {
@@ -97,7 +112,12 @@ extension MenuViewController: UIPickerViewDataSource, UIPickerViewDelegate, UITe
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedRoute = arrayRoute[row]
-        departureTextField.text = selectedRoute
+
+        if locationFlag == 1 {
+            departureTextField.text = selectedRoute
+        } else if locationFlag == 2 {
+            arrivalsTextField.text = selectedRoute
+        }
     }
 
 }
