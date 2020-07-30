@@ -35,23 +35,27 @@ class MenuViewController: UIViewController {
     let picker = UIPickerView.init()
     let toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
 
+    /// Start of ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        /// Add Corner Radius in UIView
-        //topViewRef.clipsToBounds = true
-        //topViewRef.layer.cornerRadius = 8
-
         self.navigationController?.isNavigationBarHidden = true
 
-        topViewRef.layer.shadowColor = UIColor.black.cgColor
-        topViewRef.layer.shadowOpacity = 0.1
-        topViewRef.layer.shadowOffset = .zero
-        topViewRef.layer.shadowRadius = 10
+        /// Add Corner Radius in UIView
+        topViewRef.clipsToBounds = true
+        topViewRef.layer.cornerRadius = 8
+
+//        topViewRef.layer.shadowColor = UIColor.black.cgColor
+//        topViewRef.layer.shadowOpacity = 0.1
+//        topViewRef.layer.shadowOffset = .zero
+//        topViewRef.layer.shadowRadius = 10
 
         topPanel.layer.shadowColor = UIColor.black.cgColor
         topPanel.layer.shadowOpacity = 0.1
         topPanel.layer.shadowRadius = 10
+
+        bottomViewRef.clipsToBounds = true
+        bottomViewRef.layer.cornerRadius = 8
 
         bottomViewRef.layer.shadowColor = UIColor.black.cgColor
         bottomViewRef.layer.shadowOpacity = 0.1
@@ -69,10 +73,15 @@ class MenuViewController: UIViewController {
 
         picker.delegate = self
         picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
-        picker.backgroundColor = UIColor.white
-        self.view.addSubview(picker)
+        picker.backgroundColor = .white
+//        self.view.addSubview(picker)
+
+        UIView.transition(with: self.view, duration: 0.25, options: [.transitionCrossDissolve], animations: {
+            self.view.addSubview(self.picker)
+        }, completion: nil)
 
         toolBar.items = [UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.dismissPickerView))]
+        toolBar.backgroundColor = .white
         self.view.addSubview(toolBar)
     }
 
@@ -82,10 +91,15 @@ class MenuViewController: UIViewController {
 
         picker.delegate = self
         picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
-        picker.backgroundColor = UIColor.white
-        self.view.addSubview(picker)
+        picker.backgroundColor = .white
+//        self.view.addSubview(picker)
+
+        UIView.transition(with: self.view, duration: 0.25, options: [.transitionCrossDissolve], animations: {
+            self.view.addSubview(self.picker)
+        }, completion: nil)
 
         toolBar.items = [UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.dismissPickerView))]
+        toolBar.backgroundColor = .white
         self.view.addSubview(toolBar)
     }
 
@@ -96,7 +110,7 @@ class MenuViewController: UIViewController {
 
 }
 
-extension MenuViewController: UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+extension MenuViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -121,3 +135,4 @@ extension MenuViewController: UIPickerViewDataSource, UIPickerViewDelegate, UITe
     }
 
 }
+
