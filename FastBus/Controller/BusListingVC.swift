@@ -9,7 +9,7 @@
 import UIKit
 import Lottie
 
-class BusListingViewController: UIViewController {
+class BusListingVC: UIViewController {
 
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var topViewRef: UIView!

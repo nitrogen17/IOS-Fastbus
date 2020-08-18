@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
+class MenuVC: UIViewController {
 
     /// Reference from IB
     @IBOutlet weak var topViewRef: UIView!
@@ -105,7 +105,7 @@ class MenuViewController: UIViewController {
 
 }
 
-extension MenuViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+extension MenuVC: UIPickerViewDataSource, UIPickerViewDelegate {
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1

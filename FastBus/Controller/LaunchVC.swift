@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LaunchVC: UIViewController {
 
     /// Reference from Interface Builder
     @IBOutlet weak var appTitle: UILabel!
