@@ -57,8 +57,6 @@ class LaunchVC: UIViewController {
             }
 
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                self.redirectingLabel.isHidden = false
-
                 UIView.animate(withDuration: 0.7, animations: {
                     self.fastBusImage.frame.origin.y += 50
                 }, completion: nil )
