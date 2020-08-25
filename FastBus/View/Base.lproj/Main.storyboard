@@ -909,7 +909,19 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oC4-4o-djO">
                                 <rect key="frame" x="14.5" y="288.5" width="346.5" height="358.5"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vvE-iy-KqE">
+                                        <rect key="frame" x="0.0" y="0.0" width="346.5" height="358.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vvE-iy-KqE" secondAttribute="trailing" id="B45-W4-6Nr"/>
+                                    <constraint firstItem="vvE-iy-KqE" firstAttribute="top" secondItem="oC4-4o-djO" secondAttribute="top" id="Lpi-Vd-Kzg"/>
+                                    <constraint firstItem="vvE-iy-KqE" firstAttribute="leading" secondItem="oC4-4o-djO" secondAttribute="leading" id="osq-4U-vim"/>
+                                    <constraint firstAttribute="bottom" secondItem="vvE-iy-KqE" secondAttribute="bottom" id="tKD-ls-8Qt"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Bus Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nF-8N-No8">
                                 <rect key="frame" x="87.5" y="48" width="200.5" height="30.5"/>
