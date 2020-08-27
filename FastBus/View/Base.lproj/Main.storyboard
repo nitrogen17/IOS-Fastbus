@@ -920,6 +920,18 @@
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pQ6-RR-hE0" id="mp7-XS-A8W">
                                                     <rect key="frame" x="0.0" y="0.0" width="346.5" height="116"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-Mq-iFi">
+                                                            <rect key="frame" x="136" y="48" width="74.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="o5g-Mq-iFi" firstAttribute="centerY" secondItem="mp7-XS-A8W" secondAttribute="centerY" id="G4V-0U-8co"/>
+                                                        <constraint firstItem="o5g-Mq-iFi" firstAttribute="centerX" secondItem="mp7-XS-A8W" secondAttribute="centerX" id="Nwx-AW-gfu"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
