@@ -16,6 +16,8 @@ class BusListingVC: UIViewController {
     @IBOutlet weak var bottomViewRef: UIView!
     @IBOutlet weak var topViewRefUpper: UIView!
 
+    @IBOutlet weak var tableViewRef: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +34,8 @@ class BusListingVC: UIViewController {
         bottomViewRef.clipsToBounds = true
         bottomViewRef.layer.cornerRadius = 8
 
+        tableViewRef.dataSource = self
+        tableViewRef.delegate = self
         //        lottieAnimation()
     }
 
@@ -50,6 +54,23 @@ class BusListingVC: UIViewController {
         animationView.play()
         animationView.loopMode = .loop
 
+    }
+
+}
+
+extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "searchBusCell", for: indexPath) as? BusListingTVCell
+
+        cell?.labelCell.text = "Hello World"
+
+        return cell!
     }
 
 }

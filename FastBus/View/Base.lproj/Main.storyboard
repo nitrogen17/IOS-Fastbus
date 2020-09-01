@@ -835,16 +835,16 @@
                                         <rect key="frame" x="0.0" y="0.0" width="346" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="agS-dU-Gji" userLabel="Left Stack View">
-                                                <rect key="frame" x="25" y="46.5" width="72.5" height="56.5"/>
+                                                <rect key="frame" x="25" y="46.5" width="69" height="54.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAGA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nm1-30-MSE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="28.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="69" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="23.299999237060547"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon, 14 Dec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKh-9q-j83">
-                                                        <rect key="frame" x="0.0" y="41.5" width="72.5" height="15"/>
+                                                        <rect key="frame" x="0.0" y="40.5" width="69" height="14"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                         <color key="textColor" red="0.49803921569999998" green="0.55294117649999996" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
@@ -852,16 +852,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="IuP-Sr-lEd" userLabel="Right Stack View">
-                                                <rect key="frame" x="231" y="46.5" width="90" height="56.5"/>
+                                                <rect key="frame" x="238.5" y="46.5" width="82.5" height="54.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CUBAO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnU-Jb-R9b">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="28.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="27.5"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="23.299999237060547"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon, 15 Dec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEK-W0-QA8">
-                                                        <rect key="frame" x="0.0" y="41.5" width="90" height="15"/>
+                                                        <rect key="frame" x="0.0" y="40.5" width="82.5" height="14"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                         <color key="textColor" red="0.49803921569999998" green="0.55294117649999996" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <nil key="highlightedColor"/>
@@ -881,7 +881,7 @@
                                         <rect key="frame" x="0.0" y="121" width="346" height="54"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 Search Result" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="Uvh-VW-LYj">
-                                                <rect key="frame" x="23" y="19" width="113" height="16.5"/>
+                                                <rect key="frame" x="23" y="19.5" width="101.5" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13.300000190734863"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -914,14 +914,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="346.5" height="358.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="116" id="pQ6-RR-hE0">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="116" id="pQ6-RR-hE0" customClass="BusListingTVCell" customModule="FastBus" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="346.5" height="116"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pQ6-RR-hE0" id="mp7-XS-A8W">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pQ6-RR-hE0" id="mp7-XS-A8W" userLabel="searchBusCell">
                                                     <rect key="frame" x="0.0" y="0.0" width="346.5" height="116"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-Mq-iFi">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-Mq-iFi" userLabel="labelInCell">
                                                             <rect key="frame" x="136" y="48" width="74.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -933,6 +933,9 @@
                                                         <constraint firstItem="o5g-Mq-iFi" firstAttribute="centerX" secondItem="mp7-XS-A8W" secondAttribute="centerX" id="Nwx-AW-gfu"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="labelCell" destination="o5g-Mq-iFi" id="9i4-Pe-21E"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -946,7 +949,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Bus Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nF-8N-No8">
-                                <rect key="frame" x="87.5" y="48" width="200.5" height="30.5"/>
+                                <rect key="frame" x="99.5" y="49" width="176.5" height="29.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -973,6 +976,7 @@
                     <connections>
                         <outlet property="bottomViewRef" destination="oC4-4o-djO" id="HQT-PK-jdG"/>
                         <outlet property="parentView" destination="Pa8-zd-RWJ" id="wue-cS-og4"/>
+                        <outlet property="tableViewRef" destination="vvE-iy-KqE" id="y6d-1y-Mon"/>
                         <outlet property="topViewRef" destination="T0L-eG-z1j" id="89M-mb-b1j"/>
                         <outlet property="topViewRefUpper" destination="RhN-0Z-Tjj" id="pme-s0-KNt"/>
                     </connections>
