@@ -921,16 +921,37 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="346.5" height="116"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-Mq-iFi" userLabel="labelInCell">
-                                                            <rect key="frame" x="136" y="48" width="74.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-X4-pot">
+                                                            <rect key="frame" x="0.0" y="0.0" width="346.5" height="116"/>
+                                                            <subviews>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qT6-t7-cAs">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="163.5" height="116"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5g-Mq-iFi" userLabel="labelInCell">
+                                                                            <rect key="frame" x="25" y="48" width="74.5" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstItem="o5g-Mq-iFi" firstAttribute="centerY" secondItem="qT6-t7-cAs" secondAttribute="centerY" id="VOw-ZO-wpa"/>
+                                                                        <constraint firstItem="o5g-Mq-iFi" firstAttribute="leading" secondItem="qT6-t7-cAs" secondAttribute="leading" constant="25" id="sEa-aR-742"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMn-rA-cZY">
+                                                                    <rect key="frame" x="183.5" y="0.0" width="163" height="116"/>
+                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                </view>
+                                                            </subviews>
+                                                        </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="o5g-Mq-iFi" firstAttribute="centerY" secondItem="mp7-XS-A8W" secondAttribute="centerY" id="G4V-0U-8co"/>
-                                                        <constraint firstItem="o5g-Mq-iFi" firstAttribute="centerX" secondItem="mp7-XS-A8W" secondAttribute="centerX" id="Nwx-AW-gfu"/>
+                                                        <constraint firstAttribute="trailing" secondItem="HFR-X4-pot" secondAttribute="trailing" id="DXc-v2-PlN"/>
+                                                        <constraint firstItem="HFR-X4-pot" firstAttribute="leading" secondItem="mp7-XS-A8W" secondAttribute="leading" id="Fcg-qX-aYV"/>
+                                                        <constraint firstAttribute="bottom" secondItem="HFR-X4-pot" secondAttribute="bottom" id="MlQ-Qs-8RX"/>
+                                                        <constraint firstItem="HFR-X4-pot" firstAttribute="top" secondItem="mp7-XS-A8W" secondAttribute="top" id="qBU-ji-UNc"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
