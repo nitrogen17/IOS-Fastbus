@@ -68,7 +68,7 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchBusCell", for: indexPath) as? BusListingTVCell
 
-        cell?.labelCell.text = "Hello World"
+        cell?.labelCell.text = "Bicol Isarog"
 
         return cell!
     }
