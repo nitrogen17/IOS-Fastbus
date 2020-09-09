@@ -16,6 +16,14 @@ class BusListingVC: UIViewController {
     @IBOutlet weak var bottomViewRef: UIView!
     @IBOutlet weak var topViewRefUpper: UIView!
 
+    /// Table View Outlets
+    /// Left View
+    @IBOutlet weak var busName: UILabel!
+    @IBOutlet weak var busResult: UILabel!
+
+    /// Right View
+    @IBOutlet weak var busTravelPrice: UILabel!
+
     @IBOutlet weak var tableViewRef: UITableView!
 
     override func viewDidLoad() {

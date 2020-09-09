@@ -1042,6 +1042,9 @@
                     <navigationItem key="navigationItem" id="27C-GY-juX"/>
                     <connections>
                         <outlet property="bottomViewRef" destination="oC4-4o-djO" id="HQT-PK-jdG"/>
+                        <outlet property="busName" destination="o5g-Mq-iFi" id="y6M-XU-FXH"/>
+                        <outlet property="busResult" destination="BmT-x1-fHP" id="TpG-Jo-Tai"/>
+                        <outlet property="busTravelPrice" destination="X0G-Zb-fpQ" id="H6C-0H-fN3"/>
                         <outlet property="parentView" destination="Pa8-zd-RWJ" id="wue-cS-og4"/>
                         <outlet property="tableViewRef" destination="vvE-iy-KqE" id="y6d-1y-Mon"/>
                         <outlet property="topViewRef" destination="T0L-eG-z1j" id="89M-mb-b1j"/>
