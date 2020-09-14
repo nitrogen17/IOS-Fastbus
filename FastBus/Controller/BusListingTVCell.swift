@@ -11,6 +11,8 @@ import UIKit
 class BusListingTVCell: UITableViewCell {
 
     @IBOutlet weak var labelCell: UILabel!
+    @IBOutlet weak var resultCell: UILabel!
+    @IBOutlet weak var priceCell: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
