@@ -77,7 +77,7 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchBusCell", for: indexPath) as? BusListingTVCell
 
         cell?.labelCell.text = "Bicol Isarog"
-        cell?.priceCell.text = "2,000"
+        cell?.priceCell.text = "₱ 2,000"
 
         return cell!
     }
