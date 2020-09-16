@@ -11,6 +11,23 @@ import Lottie
 
 class BusListingVC: UIViewController {
 
+    struct BusCompany {
+        var busName: String = ""
+        var busPrice: String = ""
+
+        init(busName: String, busPrice: String) {
+            self.busName = busName
+            self.busPrice = busPrice
+        }
+    }
+
+    var busCompany = [BusCompany(busName: "Raymond", busPrice: "₱ 1,341"),
+                      BusCompany(busName: "Bicol Isarog", busPrice: "₱ 2,321"),
+                      BusCompany(busName: "DLTB.CO", busPrice: "₱ 500"),
+                      BusCompany(busName: "Superlines", busPrice: "₱ 890"),
+                      BusCompany(busName: "Arayat Express", busPrice: "₱ 932"),
+                      BusCompany(busName: "AB Liner Inc.", busPrice: "₱ 231")]
+
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var topViewRef: UIView!
     @IBOutlet weak var bottomViewRef: UIView!
@@ -69,15 +86,17 @@ class BusListingVC: UIViewController {
 extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return busCompany.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "searchBusCell", for: indexPath) as? BusListingTVCell
 
-        cell?.labelCell.text = "Bicol Isarog"
-        cell?.priceCell.text = "₱ 2,000"
+        cell?.labelCell.text = busCompany[indexPath.row].busName
+        cell?.priceCell.text = busCompany[indexPath.row].busPrice
+
+//        print(indexPath.row)
 
         return cell!
     }
