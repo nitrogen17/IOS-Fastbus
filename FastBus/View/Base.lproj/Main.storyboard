@@ -955,7 +955,7 @@
                                                                     <rect key="frame" x="183.5" y="0.0" width="163" height="116"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="rmy-cD-yP9">
-                                                                            <rect key="frame" x="23" y="33" width="115" height="50"/>
+                                                                            <rect key="frame" x="48" y="33" width="115" height="50"/>
                                                                             <subviews>
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="eqQ-0B-ufP">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="63" height="50"/>
@@ -976,8 +976,18 @@
                                                                                 </stackView>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBw-Gh-tqc">
                                                                                     <rect key="frame" x="70" y="0.0" width="45" height="50"/>
-                                                                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <subviews>
+                                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron-right" translatesAutoresizingMaskIntoConstraints="NO" id="pZf-et-ivG">
+                                                                                            <rect key="frame" x="5" y="20.5" width="5" height="9"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="width" constant="5" id="8Eo-K7-2CR"/>
+                                                                                                <constraint firstAttribute="height" constant="9.3000000000000007" id="z4A-IR-56q"/>
+                                                                                            </constraints>
+                                                                                        </imageView>
+                                                                                    </subviews>
                                                                                     <constraints>
+                                                                                        <constraint firstItem="pZf-et-ivG" firstAttribute="centerY" secondItem="zBw-Gh-tqc" secondAttribute="centerY" id="2fu-57-TSr"/>
+                                                                                        <constraint firstItem="pZf-et-ivG" firstAttribute="leading" secondItem="zBw-Gh-tqc" secondAttribute="leading" constant="5" id="8ha-Tb-ldS"/>
                                                                                         <constraint firstAttribute="width" constant="45" id="sXp-GG-rul"/>
                                                                                     </constraints>
                                                                                 </view>
@@ -987,7 +997,7 @@
                                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                     <constraints>
                                                                         <constraint firstItem="rmy-cD-yP9" firstAttribute="centerY" secondItem="FMn-rA-cZY" secondAttribute="centerY" id="Nc6-hE-5Zd"/>
-                                                                        <constraint firstAttribute="trailing" secondItem="rmy-cD-yP9" secondAttribute="trailing" constant="25" id="o1y-Ge-DT5"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="rmy-cD-yP9" secondAttribute="trailing" id="o1y-Ge-DT5"/>
                                                                     </constraints>
                                                                 </view>
                                                             </subviews>
@@ -1073,6 +1083,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron-right" width="19" height="30"/>
         <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="fastbus-banner" width="409" height="107"/>
