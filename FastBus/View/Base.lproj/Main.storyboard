@@ -234,10 +234,10 @@
                                         <state key="normal" image="profile"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scU-Ay-LIO">
-                                        <rect key="frame" x="22.5" y="70.5" width="20" height="20"/>
+                                        <rect key="frame" x="22.5" y="71.5" width="10.5" height="18"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="GHn-uK-esI"/>
-                                            <constraint firstAttribute="height" constant="20" id="kPs-qO-2RI"/>
+                                            <constraint firstAttribute="width" constant="10.300000000000001" id="GHn-uK-esI"/>
+                                            <constraint firstAttribute="height" constant="18.300000000000001" id="kPs-qO-2RI"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="chevron-left"/>
@@ -362,23 +362,34 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="268" height="25"/>
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naga City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qph-6O-fyc">
-                                                                                                        <rect key="frame" x="0.0" y="0.0" width="225" height="25"/>
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="25"/>
                                                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
                                                                                                         <nil key="textColor"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
-                                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZA-W0-fRd">
-                                                                                                        <rect key="frame" x="228" y="0.0" width="40" height="25"/>
+                                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfj-OF-epp">
+                                                                                                        <rect key="frame" x="98.5" y="0.0" width="169.5" height="25"/>
+                                                                                                        <subviews>
+                                                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZA-W0-fRd">
+                                                                                                                <rect key="frame" x="148.5" y="6.5" width="21" height="12"/>
+                                                                                                                <constraints>
+                                                                                                                    <constraint firstAttribute="height" constant="12" id="6kK-yd-Yy2"/>
+                                                                                                                    <constraint firstAttribute="width" constant="21" id="sLW-Up-L2Y"/>
+                                                                                                                </constraints>
+                                                                                                                <color key="tintColor" red="0.4274570942" green="0.42743998770000002" blue="0.42745155099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                                                <state key="normal" image="chevron-down"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="didClickDepartureButton:" destination="ChR-wv-x7V" eventType="touchUpInside" id="mjp-dh-46f"/>
+                                                                                                                </connections>
+                                                                                                            </button>
+                                                                                                        </subviews>
+                                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                                                         <constraints>
-                                                                                                            <constraint firstAttribute="width" constant="40" id="OOq-ee-0tY"/>
+                                                                                                            <constraint firstAttribute="trailing" secondItem="UZA-W0-fRd" secondAttribute="trailing" id="ApT-kU-VL5"/>
+                                                                                                            <constraint firstItem="UZA-W0-fRd" firstAttribute="centerY" secondItem="zfj-OF-epp" secondAttribute="centerY" id="bsR-Ys-ZAS"/>
                                                                                                         </constraints>
-                                                                                                        <color key="tintColor" red="0.4274570942" green="0.42743998770000002" blue="0.42745155099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                        <state key="normal" image="chevron-down"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="didClickDepartureButton:" destination="ChR-wv-x7V" eventType="touchUpInside" id="hZJ-sg-rYo"/>
-                                                                                                        </connections>
-                                                                                                    </button>
+                                                                                                    </view>
                                                                                                 </subviews>
                                                                                             </stackView>
                                                                                         </subviews>
@@ -420,24 +431,34 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="268" height="25"/>
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cubao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHW-pn-Wwh">
-                                                                                                        <rect key="frame" x="0.0" y="0.0" width="225" height="25"/>
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="63.5" height="25"/>
                                                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
                                                                                                         <nil key="textColor"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
-                                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7P-sX-h7g">
-                                                                                                        <rect key="frame" x="228" y="0.0" width="40" height="25"/>
-                                                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3y-Jj-qy2">
+                                                                                                        <rect key="frame" x="66.5" y="0.0" width="201.5" height="25"/>
+                                                                                                        <subviews>
+                                                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZT-Uu-qkS">
+                                                                                                                <rect key="frame" x="180.5" y="6.5" width="21" height="12"/>
+                                                                                                                <constraints>
+                                                                                                                    <constraint firstAttribute="height" constant="12" id="TFG-JO-ZAQ"/>
+                                                                                                                    <constraint firstAttribute="width" constant="21" id="xlr-FZ-U58"/>
+                                                                                                                </constraints>
+                                                                                                                <color key="tintColor" red="0.4274570942" green="0.42743998770000002" blue="0.42745155099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                                                <state key="normal" image="chevron-down"/>
+                                                                                                                <connections>
+                                                                                                                    <action selector="didClickArrivalsButton:" destination="ChR-wv-x7V" eventType="touchUpInside" id="iVA-Oo-Hqy"/>
+                                                                                                                </connections>
+                                                                                                            </button>
+                                                                                                        </subviews>
+                                                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                                                                         <constraints>
-                                                                                                            <constraint firstAttribute="width" constant="40" id="QA0-io-ILY"/>
+                                                                                                            <constraint firstItem="YZT-Uu-qkS" firstAttribute="centerY" secondItem="H3y-Jj-qy2" secondAttribute="centerY" id="jvo-j3-3WV"/>
+                                                                                                            <constraint firstAttribute="trailing" secondItem="YZT-Uu-qkS" secondAttribute="trailing" id="n2e-9p-rPX"/>
                                                                                                         </constraints>
-                                                                                                        <color key="tintColor" red="0.4274570942" green="0.42743998770000002" blue="0.42745155099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                                        <state key="normal" image="chevron-down"/>
-                                                                                                        <connections>
-                                                                                                            <action selector="didClickArrivalsButton:" destination="ChR-wv-x7V" eventType="touchUpInside" id="4mD-vy-5ep"/>
-                                                                                                        </connections>
-                                                                                                    </button>
+                                                                                                    </view>
                                                                                                 </subviews>
                                                                                             </stackView>
                                                                                         </subviews>
@@ -786,7 +807,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="oHq-mQ-2lf"/>
                     <connections>
-                        <outlet property="arrivalsButton" destination="K7P-sX-h7g" id="p8t-xP-phJ"/>
                         <outlet property="arrivalsTextField" destination="JHW-pn-Wwh" id="mAH-Xa-nOG"/>
                         <outlet property="bottomViewRef" destination="WOU-wi-dZM" id="dzQ-3O-OT2"/>
                         <outlet property="departureButton" destination="UZA-W0-fRd" id="ofW-Ne-zRz"/>
@@ -886,11 +906,20 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flighlisting-icon" translatesAutoresizingMaskIntoConstraints="NO" id="PHG-0L-Afl">
+                                                <rect key="frame" x="305" y="19" width="16" height="16"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="1hI-hB-bIg"/>
+                                                    <constraint firstAttribute="width" constant="16" id="xch-My-1Lc"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="CIW-qc-Dtd"/>
                                             <constraint firstItem="Uvh-VW-LYj" firstAttribute="leading" secondItem="C1N-rD-Ipt" secondAttribute="leading" constant="23.300000000000001" id="X29-oc-oJu"/>
+                                            <constraint firstItem="PHG-0L-Afl" firstAttribute="centerY" secondItem="C1N-rD-Ipt" secondAttribute="centerY" id="d6T-r3-Nqf"/>
+                                            <constraint firstAttribute="trailing" secondItem="PHG-0L-Afl" secondAttribute="trailing" constant="25" id="dhE-YN-deF"/>
                                             <constraint firstItem="Uvh-VW-LYj" firstAttribute="centerY" secondItem="C1N-rD-Ipt" secondAttribute="centerY" id="uSe-yk-2nH"/>
                                         </constraints>
                                     </view>
@@ -1064,6 +1093,21 @@
             </objects>
             <point key="canvasLocation" x="309.60000000000002" y="905.3973013493254"/>
         </scene>
+        <!--Bus Info VC-->
+        <scene sceneID="bcJ-d1-ZC4">
+            <objects>
+                <viewController title="Bus Info VC" id="Mgr-Lp-geL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FjN-hW-oLh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="nTh-Lu-WfG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGP-C1-qB7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="905"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4se-ow-9ld">
             <objects>
@@ -1089,6 +1133,7 @@
         <image name="fastbus-banner" width="409" height="107"/>
         <image name="fastbus-bus" width="512" height="512"/>
         <image name="fastbus-title" width="220" height="51"/>
+        <image name="flighlisting-icon" width="48" height="48"/>
         <image name="green-banner" width="712" height="137"/>
         <image name="line_vertical" width="2" height="150"/>
         <image name="load_background" width="1125" height="2436"/>

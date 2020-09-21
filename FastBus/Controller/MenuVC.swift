@@ -64,6 +64,8 @@ class MenuVC: UIViewController {
 
     @IBAction func didClickDepartureButton(_ sender: UIButton) {
 
+        print("DEparture Button")
+
         locationFlag = 1
 
         picker.delegate = self
