@@ -81,6 +81,9 @@ class BusListingVC: UIViewController {
 
     }
 
+    @IBAction func clickDemo(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToDemo", sender: self)
+    }
 }
 
 extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
@@ -104,5 +107,7 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 98
     }
+
+
 
 }
