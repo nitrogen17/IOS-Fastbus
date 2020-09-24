@@ -1129,7 +1129,7 @@
         <scene sceneID="dzU-Gk-s0L">
             <objects>
                 <viewController title="Bus Info Controller" id="z2t-uG-f5C" customClass="MenuVC" customModule="FastBus" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xbr-1j-Br1">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Xbr-1j-Br1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1142,49 +1142,51 @@
                                             <constraint firstAttribute="height" constant="275" id="rAR-SY-kcF"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNa-19-nA0">
-                                        <rect key="frame" x="328" y="127.5" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="6YE-l1-4z1"/>
-                                            <constraint firstAttribute="width" constant="20" id="iul-UV-pzT"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="profile"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBH-f0-ZFW">
-                                        <rect key="frame" x="22.5" y="128.5" width="10.5" height="18"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="18.300000000000001" id="eNO-Kn-QLz"/>
-                                            <constraint firstAttribute="width" constant="10.300000000000001" id="mfh-04-ILH"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="chevron-left"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Bus Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3G-sz-KXc">
-                                        <rect key="frame" x="87.5" y="122.5" width="200.5" height="30.5"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="25"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="ugt-cK-aTy">
+                                        <rect key="frame" x="22.5" y="37.5" width="325" height="18"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBH-f0-ZFW">
+                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18.300000000000001" id="eNO-Kn-QLz"/>
+                                                    <constraint firstAttribute="width" constant="10.300000000000001" id="mfh-04-ILH"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="chevron-left"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3G-sz-KXc">
+                                                <rect key="frame" x="57.5" y="0.0" width="200.5" height="18"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNa-19-nA0">
+                                                <rect key="frame" x="305" y="0.0" width="20" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="6YE-l1-4z1"/>
+                                                    <constraint firstAttribute="width" constant="20" id="iul-UV-pzT"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="profile"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu_header" translatesAutoresizingMaskIntoConstraints="NO" id="zIE-z8-w5T">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="pNa-19-nA0" firstAttribute="centerY" secondItem="jCF-dS-dAn" secondAttribute="centerY" id="2YU-XJ-bQg"/>
                                     <constraint firstItem="zIE-z8-w5T" firstAttribute="top" secondItem="jCF-dS-dAn" secondAttribute="top" id="C2b-1j-AJE"/>
                                     <constraint firstAttribute="trailing" secondItem="Mia-yZ-8ak" secondAttribute="trailing" id="FXv-xi-gGP"/>
                                     <constraint firstAttribute="trailing" secondItem="zIE-z8-w5T" secondAttribute="trailing" id="ILq-qc-4f8"/>
                                     <constraint firstAttribute="bottom" secondItem="zIE-z8-w5T" secondAttribute="bottom" id="J0K-0v-b9i"/>
                                     <constraint firstAttribute="bottom" secondItem="Mia-yZ-8ak" secondAttribute="bottom" id="Rfv-tU-4wM"/>
-                                    <constraint firstAttribute="trailing" secondItem="pNa-19-nA0" secondAttribute="trailing" constant="27" id="VPV-ee-chl"/>
                                     <constraint firstItem="Mia-yZ-8ak" firstAttribute="top" secondItem="jCF-dS-dAn" secondAttribute="top" id="ZII-ef-PNL"/>
-                                    <constraint firstItem="z3G-sz-KXc" firstAttribute="centerX" secondItem="jCF-dS-dAn" secondAttribute="centerX" id="gIe-7w-hpQ"/>
-                                    <constraint firstItem="jBH-f0-ZFW" firstAttribute="centerY" secondItem="jCF-dS-dAn" secondAttribute="centerY" id="mJx-Do-kfL"/>
-                                    <constraint firstItem="z3G-sz-KXc" firstAttribute="centerY" secondItem="jCF-dS-dAn" secondAttribute="centerY" id="oJ2-0A-RxF"/>
+                                    <constraint firstItem="ugt-cK-aTy" firstAttribute="top" secondItem="jCF-dS-dAn" secondAttribute="top" constant="37.299999999999997" id="j5G-bK-2HZ"/>
                                     <constraint firstItem="zIE-z8-w5T" firstAttribute="leading" secondItem="jCF-dS-dAn" secondAttribute="leading" id="oyJ-Fu-czY"/>
-                                    <constraint firstItem="jBH-f0-ZFW" firstAttribute="leading" secondItem="jCF-dS-dAn" secondAttribute="leading" constant="22.699999999999999" id="sKl-se-c3B"/>
+                                    <constraint firstAttribute="trailing" secondItem="ugt-cK-aTy" secondAttribute="trailing" constant="27.5" id="sOg-xN-qvv"/>
+                                    <constraint firstItem="ugt-cK-aTy" firstAttribute="leading" secondItem="jCF-dS-dAn" secondAttribute="leading" constant="22.5" id="sis-D6-vTE"/>
                                     <constraint firstItem="Mia-yZ-8ak" firstAttribute="leading" secondItem="jCF-dS-dAn" secondAttribute="leading" id="spm-7W-pPL"/>
                                 </constraints>
                             </view>
