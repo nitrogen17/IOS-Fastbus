@@ -108,6 +108,4 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
         return 98
     }
 
-
-
 }

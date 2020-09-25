@@ -1136,7 +1136,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCF-dS-dAn" userLabel="Header View">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="load_background" translatesAutoresizingMaskIntoConstraints="NO" id="Mia-yZ-8ak">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bus-info" translatesAutoresizingMaskIntoConstraints="NO" id="Mia-yZ-8ak">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="275" id="rAR-SY-kcF"/>
@@ -1741,6 +1741,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bus-info" width="1125" height="825"/>
         <image name="chevron-down" width="31" height="18"/>
         <image name="chevron-left" width="31" height="55"/>
         <image name="chevron-right" width="19" height="30"/>
