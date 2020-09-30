@@ -1128,7 +1128,7 @@
         <!--Bus Info Controller-->
         <scene sceneID="dzU-Gk-s0L">
             <objects>
-                <viewController title="Bus Info Controller" id="z2t-uG-f5C" sceneMemberID="viewController">
+                <viewController title="Bus Info Controller" id="z2t-uG-f5C" customClass="BusInfoVC" customModule="FastBus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Xbr-1j-Br1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

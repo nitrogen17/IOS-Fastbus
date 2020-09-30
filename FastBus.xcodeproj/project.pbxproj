@@ -16,6 +16,7 @@
 		8C1377A924A0E0BD002839FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1377A724A0E0BD002839FA /* LaunchScreen.storyboard */; };
 		8C1FFB2E24D48D66002BA901 /* 24315-bus-on-the-road.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C1FFB2D24D48D66002BA901 /* 24315-bus-on-the-road.json */; };
 		8C3BA4AB24D32DD800674C17 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C3BA4AA24D32DD800674C17 /* Montserrat-Medium.otf */; };
+		8C53410F2524E22F007FC087 /* BusInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C53410E2524E22F007FC087 /* BusInfoVC.swift */; };
 		8C5F15CE24AF54C50078A2A6 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5F15CD24AF54C50078A2A6 /* Montserrat-Regular.otf */; };
 		8C5F15D024AF54D80078A2A6 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5F15CF24AF54D80078A2A6 /* Montserrat-SemiBold.otf */; };
 		8C5F15D224AF58210078A2A6 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F15D124AF58210078A2A6 /* MenuVC.swift */; };
@@ -37,6 +38,7 @@
 		8C1377AA24A0E0BD002839FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C1FFB2D24D48D66002BA901 /* 24315-bus-on-the-road.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "24315-bus-on-the-road.json"; sourceTree = "<group>"; };
 		8C3BA4AA24D32DD800674C17 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
+		8C53410E2524E22F007FC087 /* BusInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoVC.swift; sourceTree = "<group>"; };
 		8C5F15CD24AF54C50078A2A6 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		8C5F15CF24AF54D80078A2A6 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		8C5F15D124AF58210078A2A6 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				8C1377A024A0E0BD002839FA /* LaunchVC.swift */,
 				8C81B76224ACBBE6008C953D /* LoginVC.swift */,
 				8CC3458F24B8B2DF00DB2BF9 /* BusListingVC.swift */,
+				8C53410E2524E22F007FC087 /* BusInfoVC.swift */,
 				8CCD8D5F24FE7C70007DC77F /* BusListingTVCell.swift */,
 				8C5F15D124AF58210078A2A6 /* MenuVC.swift */,
 			);
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CC3459024B8B2DF00DB2BF9 /* BusListingVC.swift in Sources */,
+				8C53410F2524E22F007FC087 /* BusInfoVC.swift in Sources */,
 				8C1377A124A0E0BD002839FA /* LaunchVC.swift in Sources */,
 				8C5F15D224AF58210078A2A6 /* MenuVC.swift in Sources */,
 				8C13779D24A0E0BD002839FA /* AppDelegate.swift in Sources */,
