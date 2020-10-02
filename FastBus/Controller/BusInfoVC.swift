@@ -10,8 +10,14 @@ import UIKit
 
 class BusInfoVC: UIViewController {
 
+    @IBOutlet weak var topViewRef: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        /// Add Corner Radius in UIView
+        topViewRef.clipsToBounds = true
+        topViewRef.layer.cornerRadius = 8
     }
 
 }

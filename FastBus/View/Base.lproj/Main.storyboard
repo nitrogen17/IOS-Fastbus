@@ -1595,6 +1595,9 @@
                         <viewLayoutGuide key="safeArea" id="1C1-Gy-E5y"/>
                     </view>
                     <navigationItem key="navigationItem" id="8OM-uc-D4B"/>
+                    <connections>
+                        <outlet property="topViewRef" destination="bfy-Wh-mmo" id="aEO-lz-sgd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jz7-vf-EWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
