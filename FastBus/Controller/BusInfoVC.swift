@@ -20,4 +20,13 @@ class BusInfoVC: UIViewController {
         topViewRef.layer.cornerRadius = 8
     }
 
+     override func viewWillAppear(_ animated: Bool) {
+         super.viewWillAppear(animated)
+         setNeedsStatusBarAppearanceUpdate()
+     }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+         .lightContent
+     }
+
 }
