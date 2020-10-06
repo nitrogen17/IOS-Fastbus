@@ -11,6 +11,7 @@ import UIKit
 class BusInfoVC: UIViewController {
 
     @IBOutlet weak var topViewRef: UIView!
+    @IBOutlet weak var midViewRef: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,9 @@ class BusInfoVC: UIViewController {
         /// Add Corner Radius in UIView
         topViewRef.clipsToBounds = true
         topViewRef.layer.cornerRadius = 8
+
+        midViewRef.clipsToBounds = true
+        midViewRef.layer.cornerRadius = 8
     }
 
      override func viewWillAppear(_ animated: Bool) {

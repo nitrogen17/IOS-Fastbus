@@ -1378,6 +1378,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="8OM-uc-D4B"/>
                     <connections>
+                        <outlet property="midViewRef" destination="4e5-gk-LYC" id="UHB-EH-dIw"/>
                         <outlet property="topViewRef" destination="bfy-Wh-mmo" id="aEO-lz-sgd"/>
                     </connections>
                 </viewController>
