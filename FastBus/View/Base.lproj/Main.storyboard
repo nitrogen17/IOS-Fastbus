@@ -1129,7 +1129,7 @@
         <scene sceneID="dzU-Gk-s0L">
             <objects>
                 <viewController title="Bus Info Controller" id="z2t-uG-f5C" customClass="BusInfoVC" customModule="FastBus" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xbr-1j-Br1">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Xbr-1j-Br1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1340,15 +1340,58 @@
                                                     <constraint firstAttribute="height" constant="74.700000000000003" id="vXi-iM-ius"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fw-Tj-NFc" userLabel="Top View">
+                                                <rect key="frame" x="16" y="186.5" width="343" height="75"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₱ 1,250" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19u-QT-bkF">
+                                                        <rect key="frame" x="228" y="26.5" width="66" height="22.5"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18.299999237060547"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mv2-8X-QGR">
+                                                        <rect key="frame" x="16" y="22" width="100" height="36"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total Fare" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0j9-lA-k21">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="21.5"/>
+                                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16.700000762939453"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Including Tax" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHv-7n-3up">
+                                                                <rect key="frame" x="0.0" y="21.5" width="100" height="14.5"/>
+                                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11.699999809265137"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="jw4-Sd-OH9"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Mv2-8X-QGR" firstAttribute="top" secondItem="9fw-Tj-NFc" secondAttribute="top" constant="21.699999999999999" id="Qnt-IX-u8w"/>
+                                                    <constraint firstItem="19u-QT-bkF" firstAttribute="centerY" secondItem="9fw-Tj-NFc" secondAttribute="centerY" id="Whu-h8-D1Z"/>
+                                                    <constraint firstAttribute="trailing" secondItem="19u-QT-bkF" secondAttribute="trailing" constant="49" id="ese-Ql-c0x"/>
+                                                    <constraint firstAttribute="height" constant="74.700000000000003" id="hCt-aW-Kh3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Mv2-8X-QGR" secondAttribute="bottom" constant="17" id="oUQ-qn-s3p"/>
+                                                    <constraint firstItem="Mv2-8X-QGR" firstAttribute="leading" secondItem="9fw-Tj-NFc" secondAttribute="leading" constant="16" id="rRL-T2-vsS"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="560" id="9H2-OB-197"/>
+                                            <constraint firstItem="9fw-Tj-NFc" firstAttribute="leading" secondItem="BdY-XU-3CS" secondAttribute="leading" constant="16" id="Dal-uq-u6i"/>
                                             <constraint firstAttribute="trailing" secondItem="4e5-gk-LYC" secondAttribute="trailing" constant="16" id="G0O-E0-GMt"/>
+                                            <constraint firstAttribute="trailing" secondItem="9fw-Tj-NFc" secondAttribute="trailing" constant="16" id="GfK-Bg-Jbb"/>
                                             <constraint firstItem="4e5-gk-LYC" firstAttribute="top" secondItem="bfy-Wh-mmo" secondAttribute="bottom" constant="13.300000000000001" id="L8v-gX-J2D"/>
                                             <constraint firstItem="bfy-Wh-mmo" firstAttribute="leading" secondItem="BdY-XU-3CS" secondAttribute="leading" constant="16" id="gOi-0M-QE4"/>
                                             <constraint firstAttribute="trailing" secondItem="bfy-Wh-mmo" secondAttribute="trailing" constant="16" id="h2M-Wb-C7J"/>
                                             <constraint firstItem="4e5-gk-LYC" firstAttribute="leading" secondItem="BdY-XU-3CS" secondAttribute="leading" constant="16" id="hGH-Zc-6WB"/>
                                             <constraint firstItem="bfy-Wh-mmo" firstAttribute="top" secondItem="BdY-XU-3CS" secondAttribute="top" constant="10" id="peS-vX-GZt" userLabel="Top View.top = top + 16"/>
+                                            <constraint firstItem="9fw-Tj-NFc" firstAttribute="top" secondItem="4e5-gk-LYC" secondAttribute="bottom" constant="14" id="zca-JI-QSt"/>
                                         </constraints>
                                     </view>
                                 </subviews>
