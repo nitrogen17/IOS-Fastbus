@@ -12,7 +12,10 @@ class BusInfoVC: UIViewController {
 
     @IBOutlet weak var topViewRef: UIView!
     @IBOutlet weak var midViewRef: UIView!
+    @IBOutlet weak var bottomViewRef: UIView!
 
+    @IBOutlet weak var topPaneView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,13 @@ class BusInfoVC: UIViewController {
 
         midViewRef.clipsToBounds = true
         midViewRef.layer.cornerRadius = 8
+
+        bottomViewRef.clipsToBounds = true
+        bottomViewRef.layer.cornerRadius = 8
+
+        topPaneView.layer.shadowColor = UIColor.black.cgColor
+        topPaneView.layer.shadowOpacity = 0.1
+        topPaneView.layer.shadowRadius = 10
     }
 
      override func viewWillAppear(_ animated: Bool) {
