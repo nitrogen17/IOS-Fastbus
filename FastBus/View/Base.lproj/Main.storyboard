@@ -1345,9 +1345,19 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kct-hO-oYc">
                                                         <rect key="frame" x="0.0" y="0.0" width="343" height="52.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fare Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtA-9x-MDm">
+                                                                <rect key="frame" x="25" y="16" width="145.5" height="21"/>
+                                                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                         <constraints>
+                                                            <constraint firstItem="mtA-9x-MDm" firstAttribute="centerY" secondItem="Kct-hO-oYc" secondAttribute="centerY" id="HYy-D7-5rU"/>
                                                             <constraint firstAttribute="height" constant="52.399999999999999" id="bKZ-bf-8Ae"/>
+                                                            <constraint firstItem="mtA-9x-MDm" firstAttribute="leading" secondItem="Kct-hO-oYc" secondAttribute="leading" constant="25" id="or2-NO-uzq"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
