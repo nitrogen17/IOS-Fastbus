@@ -5,7 +5,7 @@
 [![License][license-image]][license-url]
 
 Online Bus Seat Reservation using Swift. 
-![](header.png)
+![](https://i.imgur.com/tKBNb9n.png)
 
 ## Features
 
@@ -20,12 +20,20 @@ Online Bus Seat Reservation using Swift.
 - iOS 13.0+
 - Xcode 11.6
 
+## Screenshot
+
+Login             |  Home
+:-------------------------:|:-------------------------:
+![](https://i.imgur.com/BUf0bK6.png)  |  ![](https://i.imgur.com/fml3gya.png)
+![](https://i.imgur.com/Cxfzpdz.png) | ![](https://i.imgur.com/a8EgACs.png)
+![](https://i.imgur.com/7ciENtX.png) | 
+
 ## Development Setup
 **You can skip this if you have CocoaPods installed in your MAC**
 
 #### CocoaPods
 Include this Pod in your Pod File:
-```
+``` 
 pod 'SwiftLint'
 ```
 
