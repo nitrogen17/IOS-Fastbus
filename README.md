@@ -4,8 +4,9 @@
 [![Swift Version][swift-image]][swift-url]
 [![License][license-image]][license-url]
 
-Online Bus Seat Reservation using Swift. 
 ![](https://i.imgur.com/tKBNb9n.png)
+
+Online Bus Seat Reservation using Swift. 
 
 ## Features
 
@@ -22,11 +23,8 @@ Online Bus Seat Reservation using Swift.
 
 ## Screenshot
 
-Login             |  Home
-:-------------------------:|:-------------------------:
-![](https://i.imgur.com/BUf0bK6.png)  |  ![](https://i.imgur.com/fml3gya.png)
-![](https://i.imgur.com/Cxfzpdz.png) | ![](https://i.imgur.com/a8EgACs.png)
-![](https://i.imgur.com/7ciENtX.png) | 
+![](https://i.imgur.com/rTfKx9N.png)
+![](https://i.imgur.com/fAWX54Q.png)
 
 ## Development Setup
 **You can skip this if you have CocoaPods installed in your MAC**
