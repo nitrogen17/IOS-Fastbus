@@ -23,7 +23,6 @@ Online Bus Seat Reservation using Swift.
 
 ## Screenshot
 
-![](https://i.imgur.com/rTfKx9N.png)
 ![](https://i.imgur.com/fAWX54Q.png)
 
 ## Development Setup
