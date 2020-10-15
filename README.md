@@ -1,8 +1,8 @@
-# iOS Fastbus
-
 [![Build Status][travis-image]][travis-url]
 [![Swift Version][swift-image]][swift-url]
 [![License][license-image]][license-url]
+
+# iOS Fastbus
 
 ![](https://i.imgur.com/tKBNb9n.png)
 
