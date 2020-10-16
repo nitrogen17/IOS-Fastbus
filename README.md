@@ -12,9 +12,6 @@ Online Bus Seat Reservation using Swift.
 
 - [x] MVC Concept
 - [x] Simple User Interface
-- [x] Feature 3
-- [x] Feature 4
-- [x] Feature 5
 
 ## Requirements
 
