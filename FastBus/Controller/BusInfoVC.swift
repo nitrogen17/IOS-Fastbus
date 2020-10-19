@@ -43,4 +43,9 @@ class BusInfoVC: UIViewController {
          .lightContent
      }
 
+    @IBAction func clickConfirm(_ sender: UIButton) {
+        print("Hello World WAZZUP!")
+    }
+
+
 }
