@@ -1,4 +1,3 @@
-[![Build Status][travis-image]][travis-url]
 [![Swift Version][swift-image]][swift-url]
 [![License][license-image]][license-url]
 
@@ -6,7 +5,7 @@
 
 ![](https://i.imgur.com/tKBNb9n.png)
 
-Online Bus Seat Reservation using Swift. 
+A Bus Reservation developed for iOS (Swift 5) that brings convenient when you check available bus in particular date and time. You can choose for ideal seat and bus available.
 
 ## Features
 
