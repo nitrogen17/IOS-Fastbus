@@ -61,6 +61,8 @@ class BusListingVC: UIViewController {
 
         tableViewRef.dataSource = self
         tableViewRef.delegate = self
+
+        tableViewRef.register(UINib(nibName: "BusListCell", bundle: nil), forCellReuseIdentifier: "BusListCell")
         //        lottieAnimation()
     }
 
@@ -94,7 +96,7 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "searchBusCell", for: indexPath) as? BusListingTVCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BusListCell", for: indexPath) as? BusListCell
 
         cell?.labelCell.text = busCompany[indexPath.row].busName
         cell?.priceCell.text = busCompany[indexPath.row].busPrice
