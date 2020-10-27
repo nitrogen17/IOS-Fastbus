@@ -15,7 +15,7 @@ class BusInfoVC: UIViewController {
     @IBOutlet weak var bottomViewRef: UIView!
 
     @IBOutlet weak var topPaneView: UIView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -27,13 +27,13 @@ class MenuVC: UIViewController {
     private var fillColor: UIColor = .blue // the color applied to the shadowLayer, rather than the view's backgroundColor
 
     /// PickerView Properties
-    var arrayRoute = ["Naga", "Daet", "Legazpi", "Lagonoy", "Sorsogon", "Manila", "Pasay", "Cubao"]
-    var selectedRoute: String? = ""
+    private var arrayRoute = ["Naga", "Daet", "Legazpi", "Lagonoy", "Sorsogon", "Manila", "Pasay", "Cubao"]
+    private var selectedRoute: String? = ""
 
-    var locationFlag: Int = 0
+    private var locationFlag: Int = 0
 
-    let picker = UIPickerView.init()
-    let toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
+    private let picker = UIPickerView.init()
+    private let toolBar = UIToolbar.init(frame: CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 50))
 
     /// Start of ViewDidLoad
     override func viewDidLoad() {
