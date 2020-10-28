@@ -141,12 +141,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8CB75EE0254982AE001AD35E /* Bus+List+Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8CED042F2540739100D52BE0 /* BusListCell.swift */,
+				8CED04302540739100D52BE0 /* BusListCell.xib */,
+			);
+			path = "Bus+List+Cell";
+			sourceTree = "<group>";
+		};
 		8CD49F762542F5AE00139396 /* Bus+Listing */ = {
 			isa = PBXGroup;
 			children = (
 				8CC3458F24B8B2DF00DB2BF9 /* BusListingVC.swift */,
-				8CED042F2540739100D52BE0 /* BusListCell.swift */,
-				8CED04302540739100D52BE0 /* BusListCell.xib */,
+				8CB75EE0254982AE001AD35E /* Bus+List+Cell */,
 			);
 			path = "Bus+Listing";
 			sourceTree = "<group>";

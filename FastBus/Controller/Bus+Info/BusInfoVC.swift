@@ -47,5 +47,4 @@ class BusInfoVC: UIViewController {
         print("Hello World WAZZUP!")
     }
 
-
 }
