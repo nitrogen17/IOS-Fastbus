@@ -24,7 +24,7 @@ class MenuVC: UIViewController {
     /// Form Properties
     private var shadowLayer: CAShapeLayer!
     private var cornerRadius: CGFloat = 25.0
-    private var fillColor: UIColor = .blue // the color applied to the shadowLayer, rather than the view's backgroundColor
+    private var fillColor: UIColor = .blue
 
     /// PickerView Properties
     private var arrayRoute = ["Naga", "Daet", "Legazpi", "Lagonoy", "Sorsogon", "Manila", "Pasay", "Cubao"]
@@ -41,6 +41,10 @@ class MenuVC: UIViewController {
 
         self.navigationController?.isNavigationBarHidden = true
 
+        setupViewProperties()
+    }
+
+    private func setupViewProperties() {
         /// Add Corner Radius in UIView
         topViewRef.clipsToBounds = true
         topViewRef.layer.cornerRadius = 8

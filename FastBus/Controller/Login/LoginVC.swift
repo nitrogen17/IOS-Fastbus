@@ -21,14 +21,6 @@ class LoginVC: UIViewController {
 
     weak var activeField: UITextField?
 
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        activeField = nil
-    }
-
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        activeField = textField
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,6 +48,18 @@ extension LoginVC {
     @objc func keyboardWillHide(sender: NSNotification) {
         self.view.frame.origin.y = 0 // Move view to original position
     }
+}
+
+extension LoginVC {
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        activeField = nil
+    }
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        activeField = textField
+    }
+
 }
 
 extension UITextField {

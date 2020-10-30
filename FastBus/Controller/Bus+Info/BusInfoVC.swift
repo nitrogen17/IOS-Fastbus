@@ -34,7 +34,7 @@ class BusInfoVC: UIViewController {
         topPaneView.layer.shadowRadius = 10
     }
 
-     override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
          super.viewWillAppear(animated)
          setNeedsStatusBarAppearanceUpdate()
      }
