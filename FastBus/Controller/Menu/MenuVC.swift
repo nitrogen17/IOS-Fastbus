@@ -41,10 +41,10 @@ class MenuVC: UIViewController {
 
         self.navigationController?.isNavigationBarHidden = true
 
-        setupViewProperties()
+        setupView()
     }
 
-    private func setupViewProperties() {
+    private func setupView() {
         /// Add Corner Radius in UIView
         topViewRef.clipsToBounds = true
         topViewRef.layer.cornerRadius = 8

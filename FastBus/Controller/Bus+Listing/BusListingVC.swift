@@ -56,7 +56,7 @@ class BusListingVC: UIViewController {
 
         self.navigationController?.isNavigationBarHidden = true
 
-        setupViewProperties()
+        setupView()
 
         tableViewRef.dataSource = self
         tableViewRef.delegate = self
@@ -65,7 +65,7 @@ class BusListingVC: UIViewController {
         //        lottieAnimation()
     }
 
-    private func setupViewProperties() {
+    private func setupView() {
         /// Add Corner Radius in UIView
         topViewRef.clipsToBounds = true
         topViewRef.layer.cornerRadius = 8
