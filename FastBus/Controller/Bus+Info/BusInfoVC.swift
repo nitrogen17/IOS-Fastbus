@@ -18,7 +18,6 @@ class BusInfoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupView()
     }
 
