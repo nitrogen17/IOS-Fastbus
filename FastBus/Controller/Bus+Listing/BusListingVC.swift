@@ -113,8 +113,6 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
         cell?.labelCell.text = busCompany[indexPath.row].getterBusName()
         cell?.priceCell.text = busCompany[indexPath.row].getterBusPrice()
 
-//        print(indexPath.row)
-
         return cell!
     }
 
