@@ -14,13 +14,10 @@ class LaunchVC: UIViewController {
     @IBOutlet weak var appTitle: UILabel!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var redirectingLabel: UILabel!
     @IBOutlet weak var fastBusImage: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        redirectingLabel.isHidden = true
 
         self.spinner.stopAnimating()
         self.fastBusImage.alpha = 0.0

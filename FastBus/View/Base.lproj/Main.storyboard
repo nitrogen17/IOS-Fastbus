@@ -84,7 +84,6 @@
                     <connections>
                         <outlet property="appTitle" destination="XuV-xG-gj6" id="Yb3-Nu-2Sh"/>
                         <outlet property="fastBusImage" destination="Uhm-Tv-Nhx" id="ioS-lO-Bz9"/>
-                        <outlet property="redirectingLabel" destination="T6A-dR-s19" id="dut-Bd-aa4"/>
                         <outlet property="spinner" destination="ol0-qj-n0H" id="QBd-gM-BJG"/>
                         <segue destination="czE-9e-gKU" kind="show" identifier="goToLogin" id="org-jn-JbC"/>
                     </connections>
@@ -1129,7 +1128,7 @@
         <scene sceneID="dzU-Gk-s0L">
             <objects>
                 <viewController title="Bus Info Controller" id="z2t-uG-f5C" customClass="BusInfoVC" customModule="FastBus" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xbr-1j-Br1">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Xbr-1j-Br1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
