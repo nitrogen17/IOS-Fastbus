@@ -1376,14 +1376,22 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOI-e1-DgR">
+                                                        <rect key="frame" x="220.5" y="60" width="87.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="7pE-Um-8JP" firstAttribute="leading" secondItem="9fw-Tj-NFc" secondAttribute="leading" constant="24" id="0XU-FM-sjt"/>
                                                     <constraint firstItem="7pE-Um-8JP" firstAttribute="top" secondItem="Kct-hO-oYc" secondAttribute="bottom" constant="7.5" id="625-z9-dhN"/>
                                                     <constraint firstAttribute="trailing" secondItem="Kct-hO-oYc" secondAttribute="trailing" id="Ak4-g7-gP5"/>
+                                                    <constraint firstItem="DOI-e1-DgR" firstAttribute="top" secondItem="Kct-hO-oYc" secondAttribute="bottom" constant="7.5" id="WwT-dy-odf"/>
                                                     <constraint firstItem="Kct-hO-oYc" firstAttribute="top" secondItem="9fw-Tj-NFc" secondAttribute="top" id="euA-Uh-U5d"/>
                                                     <constraint firstAttribute="height" constant="126.3" id="hCt-aW-Kh3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="DOI-e1-DgR" secondAttribute="trailing" constant="35" id="phL-Pa-N0F"/>
                                                     <constraint firstItem="Kct-hO-oYc" firstAttribute="leading" secondItem="9fw-Tj-NFc" secondAttribute="leading" id="scd-I4-w9K"/>
                                                 </constraints>
                                             </view>
