@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YUM-Rk-kwJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JWf-vg-d99">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -362,17 +362,17 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="268" height="25"/>
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naga City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qph-6O-fyc">
-                                                                                                        <rect key="frame" x="0.0" y="0.0" width="94.5" height="25"/>
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="95" height="25"/>
                                                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
                                                                                                         <nil key="textColor"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
                                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfj-OF-epp">
-                                                                                                        <rect key="frame" x="97.5" y="0.0" width="170.5" height="25"/>
+                                                                                                        <rect key="frame" x="98" y="0.0" width="170" height="25"/>
                                                                                                         <subviews>
                                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZA-W0-fRd">
-                                                                                                                <rect key="frame" x="149.5" y="6.5" width="21" height="12"/>
+                                                                                                                <rect key="frame" x="149" y="6.5" width="21" height="12"/>
                                                                                                                 <constraints>
                                                                                                                     <constraint firstAttribute="height" constant="12" id="6kK-yd-Yy2"/>
                                                                                                                     <constraint firstAttribute="width" constant="21" id="sLW-Up-L2Y"/>
@@ -1515,14 +1515,24 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4k-gK-O8C">
+                                <rect key="frame" x="70" y="489" width="235" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="5fi-IT-VPL"/>
+                                    <constraint firstAttribute="width" constant="234.69999999999999" id="BCY-gH-dSJ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="green-banner"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OaX-aB-Wza"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BtB-hg-QUc" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="BdA-Sd-3ew"/>
                             <constraint firstItem="BtB-hg-QUc" firstAttribute="top" secondItem="txH-Sf-o6z" secondAttribute="bottom" constant="96.299999999999997" id="QKK-Qx-0DB"/>
+                            <constraint firstItem="H4k-gK-O8C" firstAttribute="top" secondItem="BtB-hg-QUc" secondAttribute="bottom" constant="91.700000000000003" id="VBs-Ja-Cwd"/>
                             <constraint firstItem="BtB-hg-QUc" firstAttribute="centerY" secondItem="4E0-bY-q7D" secondAttribute="centerY" id="fdb-DV-3zd"/>
                             <constraint firstItem="txH-Sf-o6z" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="h1q-gK-08k"/>
+                            <constraint firstItem="H4k-gK-O8C" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="l8b-L0-5MF"/>
                         </constraints>
                     </view>
                 </viewController>
