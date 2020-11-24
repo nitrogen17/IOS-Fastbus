@@ -362,17 +362,17 @@
                                                                                                 <rect key="frame" x="0.0" y="0.0" width="268" height="25"/>
                                                                                                 <subviews>
                                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naga City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qph-6O-fyc">
-                                                                                                        <rect key="frame" x="0.0" y="0.0" width="95" height="25"/>
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="25"/>
                                                                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
                                                                                                         <nil key="textColor"/>
                                                                                                         <nil key="highlightedColor"/>
                                                                                                     </label>
                                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfj-OF-epp">
-                                                                                                        <rect key="frame" x="98" y="0.0" width="170" height="25"/>
+                                                                                                        <rect key="frame" x="98.5" y="0.0" width="169.5" height="25"/>
                                                                                                         <subviews>
                                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZA-W0-fRd">
-                                                                                                                <rect key="frame" x="149" y="6.5" width="21" height="12"/>
+                                                                                                                <rect key="frame" x="148.5" y="6.5" width="21" height="12"/>
                                                                                                                 <constraints>
                                                                                                                     <constraint firstAttribute="height" constant="12" id="6kK-yd-Yy2"/>
                                                                                                                     <constraint firstAttribute="width" constant="21" id="sLW-Up-L2Y"/>
@@ -1523,6 +1523,12 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="green-banner"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Full Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mau-eF-4UI">
+                                <rect key="frame" x="104" y="577" width="167.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16.700000762939453"/>
+                                <color key="textColor" red="0.50980392156862742" green="0.31372549019607843" blue="0.93778061639694943" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OaX-aB-Wza"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1533,6 +1539,8 @@
                             <constraint firstItem="BtB-hg-QUc" firstAttribute="centerY" secondItem="4E0-bY-q7D" secondAttribute="centerY" id="fdb-DV-3zd"/>
                             <constraint firstItem="txH-Sf-o6z" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="h1q-gK-08k"/>
                             <constraint firstItem="H4k-gK-O8C" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="l8b-L0-5MF"/>
+                            <constraint firstItem="Mau-eF-4UI" firstAttribute="top" secondItem="H4k-gK-O8C" secondAttribute="bottom" constant="42.700000000000003" id="maA-4Y-hPi"/>
+                            <constraint firstItem="Mau-eF-4UI" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="scA-gi-6Fj"/>
                         </constraints>
                     </view>
                 </viewController>
