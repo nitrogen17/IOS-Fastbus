@@ -40,7 +40,6 @@ class LoginVC: UIViewController {
 }
 
 extension LoginVC {
-    ///https://stackoverflow.com/questions/25693130/move-textfield-when-keyboard-appears-swift?page=1&tab=votes#tab-top
     @objc func keyboardWillShow(sender: NSNotification) {
         self.view.frame.origin.y = -100 // Move view 150 points upward
     }
@@ -63,7 +62,6 @@ extension LoginVC {
 }
 
 extension UITextField {
-    /// https://stackoverflow.com/questions/584538/how-to-show-done-button-on-iphone-number-pad
     func addDoneCancelToolbar(onDone: (target: Any, action: Selector)? = nil, onCancel: (target: Any, action: Selector)? = nil) {
         let onCancel = onCancel ?? (target: self, action: #selector(cancelButtonTapped))
         let onDone = onDone ?? (target: self, action: #selector(doneButtonTapped))
