@@ -11,24 +11,7 @@ import Lottie
 
 class BusListingVC: UIViewController {
 
-    private struct BusCompany {
-        private var busName: String = ""
-        private var busPrice: String = ""
-
-        init(busName: String, busPrice: String) {
-            self.busName = busName
-            self.busPrice = busPrice
-        }
-
-        func getterBusName() -> String {
-            return self.busName
-        }
-
-        func getterBusPrice() -> String {
-            return self.busPrice
-        }
-    }
-
+    /// Create an array of objects from BusCompany Class [Model]
     private var busCompany = [BusCompany(busName: "Raymond", busPrice: "₱ 1,341"),
                       BusCompany(busName: "Bicol Isarog", busPrice: "₱ 2,321"),
                       BusCompany(busName: "DLTB.CO", busPrice: "₱ 500"),

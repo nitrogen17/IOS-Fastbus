@@ -20,6 +20,7 @@
 		8C5F15CE24AF54C50078A2A6 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5F15CD24AF54C50078A2A6 /* Montserrat-Regular.otf */; };
 		8C5F15D024AF54D80078A2A6 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C5F15CF24AF54D80078A2A6 /* Montserrat-SemiBold.otf */; };
 		8C5F15D224AF58210078A2A6 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5F15D124AF58210078A2A6 /* MenuVC.swift */; };
+		8C7809A32575127100B256FA /* BusCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7809A22575127100B256FA /* BusCompany.swift */; };
 		8C81B76324ACBBE6008C953D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81B76224ACBBE6008C953D /* LoginVC.swift */; };
 		8CC3459024B8B2DF00DB2BF9 /* BusListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3458F24B8B2DF00DB2BF9 /* BusListingVC.swift */; };
 		8CED04312540739100D52BE0 /* BusListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED042F2540739100D52BE0 /* BusListCell.swift */; };
@@ -43,6 +44,7 @@
 		8C5F15CD24AF54C50078A2A6 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		8C5F15CF24AF54D80078A2A6 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		8C5F15D124AF58210078A2A6 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		8C7809A22575127100B256FA /* BusCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCompany.swift; sourceTree = "<group>"; };
 		8C81B76224ACBBE6008C953D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8CC3458F24B8B2DF00DB2BF9 /* BusListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListingVC.swift; sourceTree = "<group>"; };
 		8CED042F2540739100D52BE0 /* BusListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListCell.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				8C13779C24A0E0BD002839FA /* AppDelegate.swift */,
 				8C13779E24A0E0BD002839FA /* SceneDelegate.swift */,
+				8C7809A12575125100B256FA /* Model */,
 				8C5F15D424AF58490078A2A6 /* View */,
 				8C5F15D324AF582E0078A2A6 /* Controller */,
 				8C1377A524A0E0BD002839FA /* Assets.xcassets */,
@@ -139,6 +142,14 @@
 				8C1377A224A0E0BD002839FA /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8C7809A12575125100B256FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C7809A22575127100B256FA /* BusCompany.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8CB75EE0254982AE001AD35E /* Bus+List+Cell */ = {
@@ -366,6 +377,7 @@
 				8C13779D24A0E0BD002839FA /* AppDelegate.swift in Sources */,
 				8C13779F24A0E0BD002839FA /* SceneDelegate.swift in Sources */,
 				8CED04312540739100D52BE0 /* BusListCell.swift in Sources */,
+				8C7809A32575127100B256FA /* BusCompany.swift in Sources */,
 				8C81B76324ACBBE6008C953D /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
