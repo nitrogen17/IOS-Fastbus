@@ -46,7 +46,7 @@ class BusInfoVC: UIViewController {
      }
 
     @IBAction func clickConfirm(_ sender: UIButton) {
-        print("Hello World WAZZUP!")
+        performSegue(withIdentifier: "goToBusConfirm", sender: self)
     }
 
 }

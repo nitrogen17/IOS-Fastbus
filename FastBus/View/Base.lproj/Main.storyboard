@@ -1129,7 +1129,7 @@
         <scene sceneID="dzU-Gk-s0L">
             <objects>
                 <viewController title="Bus Info Controller" id="z2t-uG-f5C" customClass="BusInfoVC" customModule="FastBus" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xbr-1j-Br1">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Xbr-1j-Br1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1425,7 +1425,7 @@
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <action selector="clickConfirm:" destination="z2t-uG-f5C" eventType="touchUpInside" id="0Ls-YW-7tB"/>
+                                                    <action selector="clickConfirm:" destination="z2t-uG-f5C" eventType="touchUpInside" id="TDG-LI-2Pp"/>
                                                     <action selector="didClickSearch:" destination="ChR-wv-x7V" eventType="touchUpInside" id="iQw-Xy-fLh"/>
                                                 </connections>
                                             </button>
@@ -1476,16 +1476,17 @@
                         <outlet property="midViewRef" destination="4e5-gk-LYC" id="UHB-EH-dIw"/>
                         <outlet property="topPaneView" destination="Kct-hO-oYc" id="eOz-KZ-ezx"/>
                         <outlet property="topViewRef" destination="bfy-Wh-mmo" id="aEO-lz-sgd"/>
+                        <segue destination="JWf-vg-d99" kind="show" identifier="goToBusConfirm" id="i5g-Nq-LCW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jz7-vf-EWv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="904.49775112443785"/>
         </scene>
-        <!--View Controller-->
+        <!--Bus Confirmation-->
         <scene sceneID="5oR-Cn-zcL">
             <objects>
-                <viewController id="JWf-vg-d99" sceneMemberID="viewController">
+                <viewController title="Bus Confirmation" id="JWf-vg-d99" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4E0-bY-q7D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1552,6 +1553,7 @@
                             <constraint firstItem="Mau-eF-4UI" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="scA-gi-6Fj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="eIK-hj-ajc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k0d-8k-84o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
