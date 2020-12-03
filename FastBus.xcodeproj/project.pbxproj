@@ -23,6 +23,7 @@
 		8C7809A32575127100B256FA /* BusCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7809A22575127100B256FA /* BusCompany.swift */; };
 		8C81B76324ACBBE6008C953D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81B76224ACBBE6008C953D /* LoginVC.swift */; };
 		8CC3459024B8B2DF00DB2BF9 /* BusListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3458F24B8B2DF00DB2BF9 /* BusListingVC.swift */; };
+		8CCB0B342578759600422215 /* BusConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB0B332578759600422215 /* BusConfirmationVC.swift */; };
 		8CED04312540739100D52BE0 /* BusListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED042F2540739100D52BE0 /* BusListCell.swift */; };
 		8CED04322540739100D52BE0 /* BusListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CED04302540739100D52BE0 /* BusListCell.xib */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		8C7809A22575127100B256FA /* BusCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCompany.swift; sourceTree = "<group>"; };
 		8C81B76224ACBBE6008C953D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8CC3458F24B8B2DF00DB2BF9 /* BusListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListingVC.swift; sourceTree = "<group>"; };
+		8CCB0B332578759600422215 /* BusConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusConfirmationVC.swift; sourceTree = "<group>"; };
 		8CED042F2540739100D52BE0 /* BusListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListCell.swift; sourceTree = "<group>"; };
 		8CED04302540739100D52BE0 /* BusListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusListCell.xib; sourceTree = "<group>"; };
 		9E686168FA7314278ECA76AD /* Pods-FastBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastBus.release.xcconfig"; path = "Target Support Files/Pods-FastBus/Pods-FastBus.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				8CD49F782542F63900139396 /* Bus+Info */,
 				8CD49F772542F62600139396 /* Menu */,
 				8CD49F762542F5AE00139396 /* Bus+Listing */,
+				8CCB0B362578759D00422215 /* Bus+Confirmation */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +162,14 @@
 				8CED04302540739100D52BE0 /* BusListCell.xib */,
 			);
 			path = "Bus+List+Cell";
+			sourceTree = "<group>";
+		};
+		8CCB0B362578759D00422215 /* Bus+Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				8CCB0B332578759600422215 /* BusConfirmationVC.swift */,
+			);
+			path = "Bus+Confirmation";
 			sourceTree = "<group>";
 		};
 		8CD49F762542F5AE00139396 /* Bus+Listing */ = {
@@ -370,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CCB0B342578759600422215 /* BusConfirmationVC.swift in Sources */,
 				8CC3459024B8B2DF00DB2BF9 /* BusListingVC.swift in Sources */,
 				8C53410F2524E22F007FC087 /* BusInfoVC.swift in Sources */,
 				8C1377A124A0E0BD002839FA /* LaunchVC.swift in Sources */,
