@@ -74,7 +74,6 @@ class MenuVC: UIViewController {
         picker.delegate = self
         picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
         picker.backgroundColor = .white
-//        self.view.addSubview(picker)
 
         UIView.transition(with: self.view, duration: 0.25, options: [.transitionCrossDissolve], animations: {
             self.view.addSubview(self.picker)
@@ -92,7 +91,6 @@ class MenuVC: UIViewController {
         picker.delegate = self
         picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
         picker.backgroundColor = .white
-//        self.view.addSubview(picker)
 
         UIView.transition(with: self.view, duration: 0.25, options: [.transitionCrossDissolve], animations: {
             self.view.addSubview(self.picker)
