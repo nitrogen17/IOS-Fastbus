@@ -1129,7 +1129,7 @@
         <scene sceneID="dzU-Gk-s0L">
             <objects>
                 <viewController title="Bus Info Controller" id="z2t-uG-f5C" customClass="BusInfoVC" customModule="FastBus" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Xbr-1j-Br1">
+                    <view key="view" contentMode="scaleToFill" id="Xbr-1j-Br1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1557,8 +1557,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eIK-hj-ajc"/>
+                    <connections>
+                        <segue destination="AGM-VT-Ohg" kind="unwind" identifier="unwindSegueToVC1" unwindAction="unwindToVC1WithSegue:" id="XSV-Zp-g04"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k0d-8k-84o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AGM-VT-Ohg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1854" y="904"/>
         </scene>

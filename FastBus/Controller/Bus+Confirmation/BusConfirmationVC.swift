@@ -16,5 +16,7 @@ class BusConfirmationVC: UIViewController {
 
     @IBAction func performUnwindSegue(_ sender: Any) {
         print("EXECUTE!")
+
+        performSegue(withIdentifier: "unwindSegueToVC1", sender: self)
     }
 }
