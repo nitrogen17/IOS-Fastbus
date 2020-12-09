@@ -53,17 +53,10 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ol0-qj-n0H">
                                 <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
                             </activityIndicatorView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redirecting..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6A-dR-s19">
-                                <rect key="frame" x="141" y="355.5" width="93" height="17.5"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="T6A-dR-s19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0eJ-nF-hrY"/>
                             <constraint firstItem="ol0-qj-n0H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="70R-IW-ugQ"/>
                             <constraint firstItem="ol0-qj-n0H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Nd-Li-glq"/>
                             <constraint firstItem="XuV-xG-gj6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8TH-Py-pUF"/>
@@ -78,7 +71,6 @@
                             <constraint firstAttribute="bottom" secondItem="vBd-7X-gKy" secondAttribute="bottom" id="j3g-ft-vh6"/>
                             <constraint firstItem="Uhm-Tv-Nhx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pgQ-nC-jC7"/>
                             <constraint firstItem="vBd-7X-gKy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rcS-zX-WGP"/>
-                            <constraint firstItem="T6A-dR-s19" firstAttribute="top" secondItem="XuV-xG-gj6" secondAttribute="bottom" constant="10" id="tih-Xk-9YR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sry-hZ-21b"/>
