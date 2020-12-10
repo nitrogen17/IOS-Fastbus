@@ -37,19 +37,14 @@ class BusListingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController?.isNavigationBarHidden = true
-
         setupView()
-
-        tableViewRef.dataSource = self
-        tableViewRef.delegate = self
-
-        tableViewRef.register(UINib(nibName: "BusListCell", bundle: nil), forCellReuseIdentifier: "BusListCell")
-        //        lottieAnimation()
+        setupVC()
     }
 
     private func setupView() {
         /// Add Corner Radius in UIView
+        self.navigationController?.isNavigationBarHidden = true
+
         topViewRef.clipsToBounds = true
         topViewRef.layer.cornerRadius = 8
 
@@ -59,6 +54,14 @@ class BusListingVC: UIViewController {
 
         bottomViewRef.clipsToBounds = true
         bottomViewRef.layer.cornerRadius = 8
+    }
+
+    private func setupVC() {
+        tableViewRef.dataSource = self
+        tableViewRef.delegate = self
+
+        tableViewRef.register(UINib(nibName: "BusListCell", bundle: nil), forCellReuseIdentifier: "BusListCell")
+        //        lottieAnimation()
     }
 
     /// Catch will move to parent view and set navigationBarHidden to true
