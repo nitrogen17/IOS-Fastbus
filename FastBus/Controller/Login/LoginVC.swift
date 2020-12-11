@@ -24,6 +24,10 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupNotificationCenter()
+    }
+
+    private func setupNotificationCenter() {
         // Register for Keyboard Notifications, Set this LoginVC Class as Observer
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: UIResponder.keyboardWillShowNotification, object: nil)
 
