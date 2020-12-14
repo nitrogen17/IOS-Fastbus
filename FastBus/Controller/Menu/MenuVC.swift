@@ -38,6 +38,7 @@ class MenuVC: UIViewController {
     /// Start of ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+
         setupView()
     }
 
