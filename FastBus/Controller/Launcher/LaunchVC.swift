@@ -19,6 +19,10 @@ class LaunchVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupLaunchAnimation()
+    }
+
+    private func setupLaunchAnimation() {
         self.spinner.stopAnimating()
         self.fastBusImage.alpha = 0.0
 
