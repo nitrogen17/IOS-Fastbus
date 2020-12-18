@@ -1514,6 +1514,7 @@
                                     <constraint firstAttribute="height" constant="45" id="5fi-IT-VPL"/>
                                     <constraint firstAttribute="width" constant="234.69999999999999" id="BCY-gH-dSJ"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="green-banner">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Done">
@@ -1528,12 +1529,6 @@
                                     <action selector="performUnwindSegue:" destination="JWf-vg-d99" eventType="touchUpInside" id="jzx-Zk-tTN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Full Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mau-eF-4UI">
-                                <rect key="frame" x="104" y="577" width="167.5" height="20.5"/>
-                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16.700000762939453"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OaX-aB-Wza"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1544,8 +1539,6 @@
                             <constraint firstItem="BtB-hg-QUc" firstAttribute="centerY" secondItem="4E0-bY-q7D" secondAttribute="centerY" id="fdb-DV-3zd"/>
                             <constraint firstItem="txH-Sf-o6z" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="h1q-gK-08k"/>
                             <constraint firstItem="H4k-gK-O8C" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="l8b-L0-5MF"/>
-                            <constraint firstItem="Mau-eF-4UI" firstAttribute="top" secondItem="H4k-gK-O8C" secondAttribute="bottom" constant="42.700000000000003" id="maA-4Y-hPi"/>
-                            <constraint firstItem="Mau-eF-4UI" firstAttribute="centerX" secondItem="4E0-bY-q7D" secondAttribute="centerX" id="scA-gi-6Fj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eIK-hj-ajc"/>
