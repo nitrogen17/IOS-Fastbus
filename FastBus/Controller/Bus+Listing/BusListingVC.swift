@@ -97,6 +97,7 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BusListCell", for: indexPath) as? BusListCell
 
         cell?.labelCell.text = busCompany[indexPath.row].getterBusName()
+        cell?.resultCell.text = "5 Buses Available"
         cell?.priceCell.text = busCompany[indexPath.row].getterBusPrice()
 
         return cell!
