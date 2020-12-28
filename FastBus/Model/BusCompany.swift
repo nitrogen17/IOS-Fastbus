@@ -9,6 +9,7 @@
 struct BusCompany {
     private var busName: String = ""
     private var busPrice: String = ""
+    private var busResult: String = "6 Buses Available"
 
     init(busName: String, busPrice: String) {
         self.busName = busName
@@ -21,5 +22,9 @@ struct BusCompany {
 
     func getterBusPrice() -> String {
         return self.busPrice
+    }
+
+    func getterBusResult() -> String {
+        return self.busResult
     }
 }
