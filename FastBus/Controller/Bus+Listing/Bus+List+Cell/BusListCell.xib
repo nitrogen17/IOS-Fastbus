@@ -35,11 +35,22 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNJ-Ic-6Pj">
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="132"/>
+                        <state key="normal" title="Transparent-Button"/>
+                        <connections>
+                            <action selector="didTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0cX-r1-yPI"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="FiC-Ss-RiH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1Xr-52-bLa"/>
                     <constraint firstItem="qB4-81-soa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="35R-aZ-j2q"/>
+                    <constraint firstAttribute="bottom" secondItem="xNJ-Ic-6Pj" secondAttribute="bottom" id="7tR-1e-i8Z"/>
+                    <constraint firstAttribute="trailing" secondItem="xNJ-Ic-6Pj" secondAttribute="trailing" id="9r2-ti-HN1"/>
                     <constraint firstItem="ZZy-dF-7M2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="ChV-V7-Aeo"/>
+                    <constraint firstItem="xNJ-Ic-6Pj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="E9w-fS-jds"/>
+                    <constraint firstItem="xNJ-Ic-6Pj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Fte-Bv-VKu"/>
                     <constraint firstAttribute="trailing" secondItem="FiC-Ss-RiH" secondAttribute="trailing" constant="11" id="TDi-6B-yed"/>
                     <constraint firstItem="qB4-81-soa" firstAttribute="top" secondItem="ZZy-dF-7M2" secondAttribute="bottom" constant="7.5" id="WUk-VV-Vnb"/>
                     <constraint firstItem="ZZy-dF-7M2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="q7r-95-weG"/>

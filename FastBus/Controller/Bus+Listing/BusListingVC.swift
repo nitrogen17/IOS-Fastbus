@@ -100,6 +100,10 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
         cell?.resultCell.text = busCompany[indexPath.row].getterBusResult()
         cell?.priceCell.text = busCompany[indexPath.row].getterBusPrice()
 
+        cell?.cellClosure = {
+            print("EXECUTE CLOSURE \(indexPath.row)")
+        }
+
         return cell!
     }
 
@@ -108,3 +112,4 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
     }
 
 }
+

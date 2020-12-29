@@ -14,6 +14,12 @@ class BusListCell: UITableViewCell {
     @IBOutlet weak var resultCell: UILabel!
     @IBOutlet weak var priceCell: UILabel!
 
+    var cellClosure: (() -> Void)?
+
+    @IBAction func didTap(_ sender: Any) {
+        cellClosure?()
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
