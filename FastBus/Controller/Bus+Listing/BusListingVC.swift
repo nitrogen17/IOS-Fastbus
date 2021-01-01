@@ -12,12 +12,12 @@ import Lottie
 class BusListingVC: UIViewController {
 
     /// Create an array of objects from BusCompany Class [Model]
-    private var busCompany = [BusCompany(busName: "Raymond", busPrice: "₱ 1,341"),
-                      BusCompany(busName: "Bicol Isarog", busPrice: "₱ 2,321"),
-                      BusCompany(busName: "DLTB.CO", busPrice: "₱ 500"),
-                      BusCompany(busName: "Superlines", busPrice: "₱ 890"),
-                      BusCompany(busName: "Arayat Express", busPrice: "₱ 932"),
-                      BusCompany(busName: "AB Liner Inc.", busPrice: "₱ 231")]
+    private var busCompany = [BusCompany(busName: "Raymond", busPrice: "₱ 1,341", busResult: "12 Buses Available"),
+                              BusCompany(busName: "Bicol Isarog", busPrice: "₱ 2,321", busResult: "1 Bus Available"),
+                              BusCompany(busName: "DLTB.CO", busPrice: "₱ 500", busResult: "6 Buses Available"),
+                              BusCompany(busName: "Superlines", busPrice: "₱ 890", busResult: "7 Buses Available"),
+                              BusCompany(busName: "Arayat Express", busPrice: "₱ 932", busResult: "2 Buses Available"),
+                              BusCompany(busName: "AB Liner Inc.", busPrice: "₱ 231", busResult: "6 Buses Available")]
 
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var topViewRef: UIView!

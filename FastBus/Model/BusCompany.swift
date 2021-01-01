@@ -9,11 +9,12 @@
 struct BusCompany {
     private var busName: String = ""
     private var busPrice: String = ""
-    private var busResult: String = "6 Buses Available"
+    private var busResult: String = ""
 
-    init(busName: String, busPrice: String) {
+    init(busName: String, busPrice: String, busResult: String) {
         self.busName = busName
         self.busPrice = busPrice
+        self.busResult = busResult
     }
 
     func getterBusName() -> String {
