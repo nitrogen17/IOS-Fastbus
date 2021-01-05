@@ -14,6 +14,7 @@
 		8C1377A424A0E0BD002839FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1377A224A0E0BD002839FA /* Main.storyboard */; };
 		8C1377A624A0E0BD002839FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C1377A524A0E0BD002839FA /* Assets.xcassets */; };
 		8C1377A924A0E0BD002839FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C1377A724A0E0BD002839FA /* LaunchScreen.storyboard */; };
+		8C1966FD25A42C4C00175BE6 /* 43108-business-team.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C1966FC25A42C4C00175BE6 /* 43108-business-team.json */; };
 		8C1FFB2E24D48D66002BA901 /* 24315-bus-on-the-road.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C1FFB2D24D48D66002BA901 /* 24315-bus-on-the-road.json */; };
 		8C3BA4AB24D32DD800674C17 /* Montserrat-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C3BA4AA24D32DD800674C17 /* Montserrat-Medium.otf */; };
 		8C53410F2524E22F007FC087 /* BusInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C53410E2524E22F007FC087 /* BusInfoVC.swift */; };
@@ -39,6 +40,7 @@
 		8C1377A524A0E0BD002839FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C1377A824A0E0BD002839FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C1377AA24A0E0BD002839FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C1966FC25A42C4C00175BE6 /* 43108-business-team.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "43108-business-team.json"; sourceTree = "<group>"; };
 		8C1FFB2D24D48D66002BA901 /* 24315-bus-on-the-road.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "24315-bus-on-the-road.json"; sourceTree = "<group>"; };
 		8C3BA4AA24D32DD800674C17 /* Montserrat-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.otf"; sourceTree = "<group>"; };
 		8C53410E2524E22F007FC087 /* BusInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusInfoVC.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		8C1FFB2C24D48D51002BA901 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8C1966FC25A42C4C00175BE6 /* 43108-business-team.json */,
 				8C1FFB2D24D48D66002BA901 /* 24315-bus-on-the-road.json */,
 			);
 			path = Resources;
@@ -293,6 +296,7 @@
 				8C5F15CE24AF54C50078A2A6 /* Montserrat-Regular.otf in Resources */,
 				8CED04322540739100D52BE0 /* BusListCell.xib in Resources */,
 				8C5F15D024AF54D80078A2A6 /* Montserrat-SemiBold.otf in Resources */,
+				8C1966FD25A42C4C00175BE6 /* 43108-business-team.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

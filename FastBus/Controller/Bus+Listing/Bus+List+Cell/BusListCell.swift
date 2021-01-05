@@ -16,6 +16,7 @@ class BusListCell: UITableViewCell {
 
     var cellClosure: (() -> Void)?
 
+    /// Closure for index
     @IBAction func didTap(_ sender: Any) {
         cellClosure?()
     }
