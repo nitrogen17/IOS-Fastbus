@@ -13,6 +13,7 @@ class BusListCell: UITableViewCell {
     @IBOutlet weak var labelCell: UILabel!
     @IBOutlet weak var resultCell: UILabel!
     @IBOutlet weak var priceCell: UILabel!
+    @IBOutlet weak var busLogo: UIImageView!
 
     var cellClosure: (() -> Void)?
 
