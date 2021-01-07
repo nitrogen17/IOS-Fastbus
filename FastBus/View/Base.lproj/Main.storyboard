@@ -896,7 +896,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4d-PA-LxZ">
-                                        <rect key="frame" x="374" y="30" width="20" height="20"/>
+                                        <rect key="frame" x="374" y="80" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="2cj-z3-n6o"/>
                                             <constraint firstAttribute="height" constant="20" id="diN-yB-RYQ"/>
@@ -907,19 +907,30 @@
                                             <action selector="clickDemo:" destination="cVv-aS-VYM" eventType="touchUpInside" id="Mhh-8d-2rJ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fas-tA-MxM">
+                                        <rect key="frame" x="22.5" y="81" width="10.5" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18.300000000000001" id="Ky9-Nm-9VE"/>
+                                            <constraint firstAttribute="width" constant="10.300000000000001" id="Vke-3F-AnR"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="chevron-left"/>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="3FD-cv-fPV"/>
+                                    <constraint firstItem="fas-tA-MxM" firstAttribute="leading" secondItem="m64-OX-p9q" secondAttribute="leading" constant="22.699999999999999" id="7id-6r-4hh"/>
                                     <constraint firstAttribute="bottom" secondItem="Kct-Qe-uv1" secondAttribute="bottom" id="CqQ-Vz-jZR"/>
                                     <constraint firstAttribute="trailing" secondItem="rLV-hH-0Kx" secondAttribute="trailing" id="JSl-hP-J8S"/>
                                     <constraint firstItem="Kct-Qe-uv1" firstAttribute="top" secondItem="m64-OX-p9q" secondAttribute="top" id="MfX-l1-luj"/>
                                     <constraint firstAttribute="trailing" secondItem="Kct-Qe-uv1" secondAttribute="trailing" id="OwE-JH-kP6"/>
+                                    <constraint firstItem="fas-tA-MxM" firstAttribute="centerY" secondItem="m64-OX-p9q" secondAttribute="centerY" id="S1A-du-bnM"/>
                                     <constraint firstItem="rLV-hH-0Kx" firstAttribute="leading" secondItem="m64-OX-p9q" secondAttribute="leading" id="U07-Ns-7zI"/>
                                     <constraint firstItem="Kct-Qe-uv1" firstAttribute="leading" secondItem="m64-OX-p9q" secondAttribute="leading" id="Vy0-kn-rOv"/>
+                                    <constraint firstItem="j4d-PA-LxZ" firstAttribute="centerY" secondItem="m64-OX-p9q" secondAttribute="centerY" id="VzV-bS-1lH"/>
                                     <constraint firstItem="rLV-hH-0Kx" firstAttribute="top" secondItem="m64-OX-p9q" secondAttribute="top" id="cdp-4F-pGj"/>
                                     <constraint firstAttribute="bottom" secondItem="rLV-hH-0Kx" secondAttribute="bottom" id="cz0-1V-LOl"/>
                                     <constraint firstAttribute="trailing" secondItem="j4d-PA-LxZ" secondAttribute="trailing" constant="20" id="qXL-ro-X4D"/>
-                                    <constraint firstItem="j4d-PA-LxZ" firstAttribute="top" secondItem="m64-OX-p9q" secondAttribute="top" constant="30" id="ufH-jh-fCr"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0L-eG-z1j">
@@ -928,6 +939,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RhN-0Z-Tjj">
                                         <rect key="frame" x="0.0" y="0.0" width="385" height="120"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dM-ES-ubt" userLabel="Top View Animated View">
+                                                <rect key="frame" x="107.5" y="0.0" width="170" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="jVd-P5-oXZ"/>
+                                                    <constraint firstAttribute="height" constant="120" id="mgf-zx-FfJ"/>
+                                                </constraints>
+                                            </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="agS-dU-Gji" userLabel="Left Stack View">
                                                 <rect key="frame" x="25" y="46.5" width="72.5" height="56.5"/>
                                                 <subviews>
@@ -967,7 +985,9 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="IuP-Sr-lEd" secondAttribute="trailing" constant="25" id="2CM-t2-TeR"/>
                                             <constraint firstItem="agS-dU-Gji" firstAttribute="top" secondItem="RhN-0Z-Tjj" secondAttribute="top" constant="46.5" id="Mrp-mx-XeY"/>
+                                            <constraint firstItem="4dM-ES-ubt" firstAttribute="centerY" secondItem="RhN-0Z-Tjj" secondAttribute="centerY" id="amS-iY-eE0"/>
                                             <constraint firstItem="agS-dU-Gji" firstAttribute="leading" secondItem="RhN-0Z-Tjj" secondAttribute="leading" constant="25" id="dh7-6d-V9q"/>
+                                            <constraint firstItem="4dM-ES-ubt" firstAttribute="centerX" secondItem="RhN-0Z-Tjj" secondAttribute="centerX" id="kFt-cd-izF"/>
                                             <constraint firstItem="IuP-Sr-lEd" firstAttribute="top" secondItem="RhN-0Z-Tjj" secondAttribute="top" constant="46.5" id="rlL-lw-Pf2"/>
                                         </constraints>
                                     </view>
@@ -1156,6 +1176,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="27C-GY-juX"/>
                     <connections>
+                        <outlet property="animatedArrow" destination="4dM-ES-ubt" id="FN0-vU-hxa"/>
                         <outlet property="bottomViewRef" destination="oC4-4o-djO" id="HQT-PK-jdG"/>
                         <outlet property="parentView" destination="Pa8-zd-RWJ" id="wue-cS-og4"/>
                         <outlet property="tableViewRef" destination="vvE-iy-KqE" id="y6d-1y-Mon"/>
@@ -1166,7 +1187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ka-JD-vW6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="309.60000000000002" y="905.3973013493254"/>
+            <point key="canvasLocation" x="308.69565217391306" y="905.35714285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4se-ow-9ld">

@@ -22,8 +22,12 @@ class BusConfirmationVC: UIViewController {
     }
 
     func lottieAnimation() {
-        let animationView = AnimationView(name: "24315-bus-on-the-road")
-        animationView.frame = CGRect(x: 0, y: 0, width: 390, height: 120)
+//        let animationView = AnimationView(name: "24315-bus-on-the-road")
+        let animationView = AnimationView(name: "25925-fast-delivery")
+
+//        animationView.frame = CGRect(x: 0, y: 0, width: 390, height: 120)
+        animationView.frame = CGRect(x: 0, y: 0, width: 340, height: 340)
+
         animationView.center = self.view.center
         animationView.contentMode = .scaleToFill
         view.addSubview(animationView)

@@ -32,6 +32,9 @@ class BusListingVC: UIViewController {
     /// Right View
     @IBOutlet weak var busTravelPrice: UILabel!
 
+    /// Animation View - from Lottie
+    @IBOutlet weak var animatedArrow: UIView!
+
     @IBOutlet weak var tableViewRef: UITableView!
 
     override func viewDidLoad() {
@@ -54,6 +57,8 @@ class BusListingVC: UIViewController {
 
         bottomViewRef.clipsToBounds = true
         bottomViewRef.layer.cornerRadius = 8
+
+        lottieAnimation1()
     }
 
     private func setupVC() {
@@ -81,6 +86,16 @@ class BusListingVC: UIViewController {
 
     }
 
+    func lottieAnimation1() {
+        let animationSubView = AnimationView(name: "13171-forward-arrow")
+        animationSubView.frame = self.animatedArrow.bounds
+
+        self.animatedArrow.addSubview(animationSubView)
+        self.view.bringSubviewToFront(animationSubView)
+        animationSubView.play()
+        animationSubView.loopMode = .loop
+    }
+
     @IBAction func clickDemo(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToDemo", sender: self)
     }
@@ -99,7 +114,7 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
         cell?.labelCell.text = busCompany[indexPath.row].getterBusName()
         cell?.resultCell.text = busCompany[indexPath.row].getterBusResult()
         cell?.priceCell.text = busCompany[indexPath.row].getterBusPrice()
-        cell?.busLogo.image = UIImage(named: busCompany[indexPath.row].getterBusLogo())
+//        cell?.busLogo.image = UIImage(named: busCompany[indexPath.row].getterBusLogo())
 
         cell?.cellClosure = {
             print("EXECUTE CLOSURE \(indexPath.row)")
