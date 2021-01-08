@@ -25,8 +25,10 @@
 		8C7809A32575127100B256FA /* BusCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7809A22575127100B256FA /* BusCompany.swift */; };
 		8C81B76324ACBBE6008C953D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C81B76224ACBBE6008C953D /* LoginVC.swift */; };
 		8C9222F225A6A420001BA2AE /* 13171-forward-arrow.json in Resources */ = {isa = PBXBuildFile; fileRef = 8C9222F125A6A420001BA2AE /* 13171-forward-arrow.json */; };
+		8CA264AC25A81B71004F9010 /* 6843-map-location.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CA264AB25A81B71004F9010 /* 6843-map-location.json */; };
 		8CC3459024B8B2DF00DB2BF9 /* BusListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC3458F24B8B2DF00DB2BF9 /* BusListingVC.swift */; };
 		8CCB0B342578759600422215 /* BusConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB0B332578759600422215 /* BusConfirmationVC.swift */; };
+		8CE846EA25A81D13001662DE /* 14554-awesome.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CE846E925A81D13001662DE /* 14554-awesome.json */; };
 		8CED04312540739100D52BE0 /* BusListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CED042F2540739100D52BE0 /* BusListCell.swift */; };
 		8CED04322540739100D52BE0 /* BusListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CED04302540739100D52BE0 /* BusListCell.xib */; };
 /* End PBXBuildFile section */
@@ -53,8 +55,10 @@
 		8C7809A22575127100B256FA /* BusCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCompany.swift; sourceTree = "<group>"; };
 		8C81B76224ACBBE6008C953D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		8C9222F125A6A420001BA2AE /* 13171-forward-arrow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "13171-forward-arrow.json"; sourceTree = "<group>"; };
+		8CA264AB25A81B71004F9010 /* 6843-map-location.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "6843-map-location.json"; sourceTree = "<group>"; };
 		8CC3458F24B8B2DF00DB2BF9 /* BusListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListingVC.swift; sourceTree = "<group>"; };
 		8CCB0B332578759600422215 /* BusConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusConfirmationVC.swift; sourceTree = "<group>"; };
+		8CE846E925A81D13001662DE /* 14554-awesome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "14554-awesome.json"; sourceTree = "<group>"; };
 		8CED042F2540739100D52BE0 /* BusListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusListCell.swift; sourceTree = "<group>"; };
 		8CED04302540739100D52BE0 /* BusListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BusListCell.xib; sourceTree = "<group>"; };
 		9E686168FA7314278ECA76AD /* Pods-FastBus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FastBus.release.xcconfig"; path = "Target Support Files/Pods-FastBus/Pods-FastBus.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 		8C1FFB2C24D48D51002BA901 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8CE846E925A81D13001662DE /* 14554-awesome.json */,
+				8CA264AB25A81B71004F9010 /* 6843-map-location.json */,
 				8C44EA8925A6AF5F00FBCF9A /* 25925-fast-delivery.json */,
 				8C9222F125A6A420001BA2AE /* 13171-forward-arrow.json */,
 				8C1966FC25A42C4C00175BE6 /* 43108-business-team.json */,
@@ -302,6 +308,8 @@
 				8C1377A424A0E0BD002839FA /* Main.storyboard in Resources */,
 				8C1FFB2E24D48D66002BA901 /* 24315-bus-on-the-road.json in Resources */,
 				8C5F15CE24AF54C50078A2A6 /* Montserrat-Regular.otf in Resources */,
+				8CA264AC25A81B71004F9010 /* 6843-map-location.json in Resources */,
+				8CE846EA25A81D13001662DE /* 14554-awesome.json in Resources */,
 				8CED04322540739100D52BE0 /* BusListCell.xib in Resources */,
 				8C5F15D024AF54D80078A2A6 /* Montserrat-SemiBold.otf in Resources */,
 				8C1966FD25A42C4C00175BE6 /* 43108-business-team.json in Resources */,

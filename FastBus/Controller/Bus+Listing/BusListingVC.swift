@@ -87,7 +87,8 @@ class BusListingVC: UIViewController {
     }
 
     func lottieAnimation1() {
-        let animationSubView = AnimationView(name: "13171-forward-arrow")
+//        let animationSubView = AnimationView(name: "13171-forward-arrow")
+        let animationSubView = AnimationView(name: "6843-map-location")
         animationSubView.frame = self.animatedArrow.bounds
 
         self.animatedArrow.addSubview(animationSubView)

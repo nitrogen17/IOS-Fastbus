@@ -23,7 +23,7 @@ class BusConfirmationVC: UIViewController {
 
     func lottieAnimation() {
 //        let animationView = AnimationView(name: "24315-bus-on-the-road")
-        let animationView = AnimationView(name: "25925-fast-delivery")
+        let animationView = AnimationView(name: "14554-awesome")
 
 //        animationView.frame = CGRect(x: 0, y: 0, width: 390, height: 120)
         animationView.frame = CGRect(x: 0, y: 0, width: 340, height: 340)
@@ -32,7 +32,7 @@ class BusConfirmationVC: UIViewController {
         animationView.contentMode = .scaleToFill
         view.addSubview(animationView)
         animationView.play()
-        animationView.loopMode = .loop
+//        animationView.loopMode = .loop    
 
     }
 }
