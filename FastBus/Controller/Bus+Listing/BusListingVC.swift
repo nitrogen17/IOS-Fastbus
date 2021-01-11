@@ -100,6 +100,11 @@ class BusListingVC: UIViewController {
     @IBAction func clickDemo(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToDemo", sender: self)
     }
+
+    @IBAction func clickBackButton(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+
 }
 
 extension BusListingVC: UITableViewDataSource, UITableViewDelegate {

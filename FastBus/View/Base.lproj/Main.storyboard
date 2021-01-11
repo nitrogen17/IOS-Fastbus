@@ -915,6 +915,9 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="chevron-left"/>
+                                        <connections>
+                                            <action selector="clickBackButton:" destination="cVv-aS-VYM" eventType="touchUpInside" id="hsd-cP-D2C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -1258,6 +1261,9 @@
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" image="chevron-left"/>
+                                                <connections>
+                                                    <action selector="clickBackButton:" destination="z2t-uG-f5C" eventType="touchUpInside" id="u7g-Kz-dUo"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bus Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3G-sz-KXc">
                                                 <rect key="frame" x="57.5" y="0.0" width="239.5" height="20"/>

@@ -15,6 +15,7 @@ class BusInfoVC: UIViewController {
     @IBOutlet weak var bottomViewRef: UIView!
 
     @IBOutlet weak var topPaneView: UIView!
+    @IBOutlet weak var backButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,4 +51,7 @@ class BusInfoVC: UIViewController {
         performSegue(withIdentifier: "goToBusConfirm", sender: self)
     }
 
+    @IBAction func clickBackButton(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
