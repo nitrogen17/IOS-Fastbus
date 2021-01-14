@@ -12,12 +12,13 @@ import Lottie
 class BusListingVC: UIViewController {
 
     /// Create an array of objects from BusCompany Class [Model]
-    private var busCompany = [BusCompany(busName: "Raymond", busPrice: "₱ 1,341", busResult: "12 Buses Available", busLogo: "raymond"),
-                              BusCompany(busName: "Bicol Isarog", busPrice: "₱ 2,321", busResult: "1 Bus Available", busLogo: "bicol-isarog"),
-                              BusCompany(busName: "DLTB.CO", busPrice: "₱ 500", busResult: "6 Buses Available", busLogo: "dltb"),
-                              BusCompany(busName: "Superlines", busPrice: "₱ 890", busResult: "7 Buses Available", busLogo: "superlines"),
-                              BusCompany(busName: "Philtranco", busPrice: "₱ 932", busResult: "2 Buses Available", busLogo: "philtranco"),
-                              BusCompany(busName: "JAC Liner Inc.", busPrice: "₱ 231", busResult: "6 Buses Available", busLogo: "jac-liner")]
+    private var busCompany = [
+    BusCompany(busName: "Raymond", busPrice: "₱ 1,341", busResult: "12 Buses Available", busLogo: "raymond"),
+    BusCompany(busName: "Bicol Isarog", busPrice: "₱ 2,321", busResult: "1 Bus Available", busLogo: "bicol-isarog"),
+    BusCompany(busName: "DLTB.CO", busPrice: "₱ 500", busResult: "6 Buses Available", busLogo: "dltb"),
+    BusCompany(busName: "Superlines", busPrice: "₱ 890", busResult: "7 Buses Available", busLogo: "superlines"),
+    BusCompany(busName: "Philtranco", busPrice: "₱ 932", busResult: "2 Buses Available", busLogo: "philtranco"),
+    BusCompany(busName: "JAC Liner Inc.", busPrice: "₱ 231", busResult: "6 Buses Available", busLogo: "jac-liner")]
 
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var topViewRef: UIView!
@@ -123,7 +124,8 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
 //        cell?.busLogo.image = UIImage(named: busCompany[indexPath.row].getterBusLogo())
 
         cell?.cellClosure = {
-            print("EXECUTE CLOSURE \(indexPath.row)")
+//            print("EXECUTE CLOSURE \(indexPath.row)")
+            self.performSegue(withIdentifier: "goToDemo", sender: self)
         }
 
         return cell!
