@@ -78,9 +78,6 @@ class BusListingVC: UIViewController {
     func lottieAnimation() {
         let animationView = AnimationView(name: "24315-bus-on-the-road")
         animationView.frame = CGRect(x: 0, y: 100, width: 200, height: 50)
-//        animationView.center = self.view.center
-//        animationView.contentMode = .scaleToFill
-//        view.addSubview(animationView)
         view.addSubview(animationView)
         animationView.play()
         animationView.loopMode = .loop
@@ -88,7 +85,6 @@ class BusListingVC: UIViewController {
     }
 
     func lottieAnimation1() {
-//        let animationSubView = AnimationView(name: "13171-forward-arrow")
         let animationSubView = AnimationView(name: "6843-map-location")
         animationSubView.frame = self.animatedArrow.bounds
 
