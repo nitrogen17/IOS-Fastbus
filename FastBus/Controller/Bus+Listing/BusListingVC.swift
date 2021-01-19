@@ -120,7 +120,6 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
 //        cell?.busLogo.image = UIImage(named: busCompany[indexPath.row].getterBusLogo())
 
         cell?.cellClosure = {
-//            print("EXECUTE CLOSURE \(indexPath.row)")
             self.performSegue(withIdentifier: "goToDemo", sender: self)
         }
 
