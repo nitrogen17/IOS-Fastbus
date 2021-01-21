@@ -12,19 +12,23 @@ import Foundation
 class LoginVC: UIViewController {
 
     @IBOutlet var viewReference: UIView!
-    @IBOutlet weak var usernameTextField: UITextField! {
-        didSet { usernameTextField?.addDoneCancelToolbar() }
-    }
-    @IBOutlet weak var passwordTextField: UITextField! {
-        didSet { passwordTextField?.addDoneCancelToolbar() }
-    }
+    @IBOutlet weak var usernameTextField: UITextField!
+
+//    {
+//        didSet { usernameTextField?.addDoneCancelToolbar() }
+//    }
+    @IBOutlet weak var passwordTextField: UITextField!
+
+//    {
+//        didSet { passwordTextField?.addDoneCancelToolbar() }
+//    }
 
     weak var activeField: UITextField?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupNotificationCenter()
+//        setupNotificationCenter()
     }
 
     private func setupNotificationCenter() {

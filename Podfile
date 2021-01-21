@@ -7,5 +7,6 @@ target 'FastBus' do
 
   # Pods for FastBus
   pod 'lottie-ios'
+  pod 'IQKeyboardManager'
 
 end
