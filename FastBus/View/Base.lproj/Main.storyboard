@@ -429,23 +429,21 @@
                                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zfj-OF-epp">
                                                                                                         <rect key="frame" x="98.5" y="0.0" width="169.5" height="25"/>
                                                                                                         <subviews>
-                                                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZA-W0-fRd">
-                                                                                                                <rect key="frame" x="148.5" y="6.5" width="21" height="12"/>
-                                                                                                                <constraints>
-                                                                                                                    <constraint firstAttribute="height" constant="12" id="6kK-yd-Yy2"/>
-                                                                                                                    <constraint firstAttribute="width" constant="21" id="sLW-Up-L2Y"/>
-                                                                                                                </constraints>
-                                                                                                                <color key="tintColor" red="0.4274570942" green="0.42743998770000002" blue="0.42745155099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERh-us-Ptf">
+                                                                                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="25"/>
+                                                                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                                 <state key="normal" image="chevron-down"/>
                                                                                                                 <connections>
-                                                                                                                    <action selector="didClickDepartureButton:" destination="ChR-wv-x7V" eventType="touchUpInside" id="mjp-dh-46f"/>
+                                                                                                                    <action selector="didClickDepartureButton:" destination="ChR-wv-x7V" eventType="touchUpInside" id="m8L-0k-29s"/>
                                                                                                                 </connections>
                                                                                                             </button>
                                                                                                         </subviews>
                                                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                                         <constraints>
-                                                                                                            <constraint firstAttribute="trailing" secondItem="UZA-W0-fRd" secondAttribute="trailing" id="ApT-kU-VL5"/>
-                                                                                                            <constraint firstItem="UZA-W0-fRd" firstAttribute="centerY" secondItem="zfj-OF-epp" secondAttribute="centerY" id="bsR-Ys-ZAS"/>
+                                                                                                            <constraint firstAttribute="bottom" secondItem="ERh-us-Ptf" secondAttribute="bottom" id="8P4-bV-Pks"/>
+                                                                                                            <constraint firstItem="ERh-us-Ptf" firstAttribute="top" secondItem="zfj-OF-epp" secondAttribute="top" id="F80-qU-XMd"/>
+                                                                                                            <constraint firstAttribute="trailing" secondItem="ERh-us-Ptf" secondAttribute="trailing" id="G0P-Ax-Cpz"/>
+                                                                                                            <constraint firstItem="ERh-us-Ptf" firstAttribute="leading" secondItem="zfj-OF-epp" secondAttribute="leading" id="WIY-Yt-Pkh"/>
                                                                                                         </constraints>
                                                                                                     </view>
                                                                                                 </subviews>
@@ -499,22 +497,21 @@
                                                                                                         <rect key="frame" x="66.5" y="0.0" width="201.5" height="25"/>
                                                                                                         <subviews>
                                                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZT-Uu-qkS">
-                                                                                                                <rect key="frame" x="180.5" y="6.5" width="21" height="12"/>
-                                                                                                                <constraints>
-                                                                                                                    <constraint firstAttribute="height" constant="12" id="TFG-JO-ZAQ"/>
-                                                                                                                    <constraint firstAttribute="width" constant="21" id="xlr-FZ-U58"/>
-                                                                                                                </constraints>
+                                                                                                                <rect key="frame" x="0.0" y="0.0" width="201.5" height="25"/>
                                                                                                                 <color key="tintColor" red="0.4274570942" green="0.42743998770000002" blue="0.42745155099999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                                                 <state key="normal" image="chevron-down"/>
                                                                                                                 <connections>
-                                                                                                                    <action selector="didClickArrivalsButton:" destination="ChR-wv-x7V" eventType="touchUpInside" id="iVA-Oo-Hqy"/>
+                                                                                                                    <action selector="didClickArrivalsButton:" destination="ChR-wv-x7V" eventType="touchUpInside" id="6D4-Ah-2Hh"/>
                                                                                                                 </connections>
                                                                                                             </button>
                                                                                                         </subviews>
                                                                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                                         <constraints>
+                                                                                                            <constraint firstAttribute="trailing" secondItem="YZT-Uu-qkS" secondAttribute="trailing" id="M4T-gl-uQV"/>
+                                                                                                            <constraint firstAttribute="bottom" secondItem="YZT-Uu-qkS" secondAttribute="bottom" id="gUb-It-deK"/>
                                                                                                             <constraint firstItem="YZT-Uu-qkS" firstAttribute="centerY" secondItem="H3y-Jj-qy2" secondAttribute="centerY" id="jvo-j3-3WV"/>
-                                                                                                            <constraint firstAttribute="trailing" secondItem="YZT-Uu-qkS" secondAttribute="trailing" id="n2e-9p-rPX"/>
+                                                                                                            <constraint firstItem="YZT-Uu-qkS" firstAttribute="leading" secondItem="H3y-Jj-qy2" secondAttribute="leading" id="u3e-tz-ZbI"/>
+                                                                                                            <constraint firstItem="YZT-Uu-qkS" firstAttribute="top" secondItem="H3y-Jj-qy2" secondAttribute="top" id="xQ8-XZ-lE2"/>
                                                                                                         </constraints>
                                                                                                     </view>
                                                                                                 </subviews>
@@ -867,7 +864,6 @@
                     <connections>
                         <outlet property="arrivalsTextField" destination="JHW-pn-Wwh" id="mAH-Xa-nOG"/>
                         <outlet property="bottomViewRef" destination="WOU-wi-dZM" id="dzQ-3O-OT2"/>
-                        <outlet property="departureButton" destination="UZA-W0-fRd" id="ofW-Ne-zRz"/>
                         <outlet property="departureTextField" destination="Qph-6O-fyc" id="WsM-eb-A7C"/>
                         <outlet property="topPanel" destination="2ZK-Ak-tK7" id="uHi-HX-VbR"/>
                         <outlet property="topViewRef" destination="F2N-FH-ehI" id="ccO-JE-h7v"/>

@@ -28,6 +28,9 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /// Add Distance from Keyboard to TextField
+        usernameTextField.keyboardDistanceFromTextField = 10
+        passwordTextField.keyboardDistanceFromTextField = 10
 //        setupNotificationCenter()
     }
 
