@@ -67,7 +67,6 @@ class BusListingVC: UIViewController {
         tableViewRef.delegate = self
 
         tableViewRef.register(UINib(nibName: "BusListCell", bundle: nil), forCellReuseIdentifier: "BusListCell")
-        //        lottieAnimation()
     }
 
     /// Catch will move to parent view and set navigationBarHidden to true
