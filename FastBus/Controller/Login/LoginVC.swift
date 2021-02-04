@@ -23,7 +23,6 @@ class LoginVC: UIViewController {
         /// Add Distance from Keyboard to TextField
         usernameTextField.keyboardDistanceFromTextField = 5
         passwordTextField.keyboardDistanceFromTextField = 5
-//        setupNotificationCenter()
     }
 
     @IBAction func didClickSignIn(_ sender: UIButton) {
