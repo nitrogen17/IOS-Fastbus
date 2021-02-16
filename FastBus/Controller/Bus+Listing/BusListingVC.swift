@@ -116,7 +116,7 @@ extension BusListingVC: UITableViewDataSource, UITableViewDelegate {
         cell?.labelCell.text = busCompany[indexPath.row].getterBusName()
         cell?.resultCell.text = busCompany[indexPath.row].getterBusResult()
         cell?.priceCell.text = busCompany[indexPath.row].getterBusPrice()
-//        cell?.busLogo.image = UIImage(named: busCompany[indexPath.row].getterBusLogo())
+        cell?.busLogo.image = UIImage(named: busCompany[indexPath.row].getterBusLogo())
 
         cell?.cellClosure = {
             self.performSegue(withIdentifier: "goToDemo", sender: self)
