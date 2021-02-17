@@ -11,7 +11,7 @@ import Lottie
 
 class BusListingVC: UIViewController {
 
-    /// Create an array of objects from BusCompany Class [Model]
+    /// Create an array of objects from BusCompany Class [Model] - stored property
     private var busCompany = [
     BusCompany(busName: "Raymond", busPrice: "₱ 1,341", busResult: "12 Buses Available", busLogo: "raymond"),
     BusCompany(busName: "Bicol Isarog", busPrice: "₱ 2,321", busResult: "1 Bus Available", busLogo: "bicol-isarog"),
@@ -20,6 +20,7 @@ class BusListingVC: UIViewController {
     BusCompany(busName: "Philtranco", busPrice: "₱ 932", busResult: "2 Buses Available", busLogo: "philtranco"),
     BusCompany(busName: "JAC Liner Inc.", busPrice: "₱ 231", busResult: "6 Buses Available", busLogo: "jac-liner")]
 
+    
     @IBOutlet var parentView: UIView!
     @IBOutlet weak var topViewRef: UIView!
     @IBOutlet weak var bottomViewRef: UIView!
