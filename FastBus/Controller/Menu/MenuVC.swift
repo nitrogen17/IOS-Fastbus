@@ -27,7 +27,14 @@ class MenuVC: UIViewController {
     private var fillColor: UIColor = .blue
 
     /// PickerView Properties
-    private var arrayRoute = ["Naga", "Daet", "Legazpi", "Lagonoy", "Sorsogon", "Manila", "Pasay", "Cubao"]
+    private var arrayRoute = ["Naga",
+                              "Daet",
+                              "Legazpi",
+                              "Lagonoy",
+                              "Sorsogon",
+                              "Manila",
+                              "Pasay",
+                              "Cubao"]
     private var selectedRoute: String? = ""
 
     private var locationFlag: Int = 0
