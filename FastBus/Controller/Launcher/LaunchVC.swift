@@ -45,6 +45,7 @@ class LaunchVC: UIViewController {
             /// Delay for 3 seconds
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { }
 
+            /// Delay for 1 second
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 UIView.animate(withDuration: 0.7, animations: {
                     self.fastBusImage.frame.origin.y += 50
