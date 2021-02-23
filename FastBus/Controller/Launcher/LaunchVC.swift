@@ -40,6 +40,7 @@ class LaunchVC: UIViewController {
         /// Manual Animates FlashChat Text using Loop
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
 
+            /// Stop spinner after 5 seconds
             self.spinner.stopAnimating()
 
             /// Delay for 3 seconds
