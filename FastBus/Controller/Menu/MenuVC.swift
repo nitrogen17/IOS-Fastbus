@@ -76,8 +76,6 @@ class MenuVC: UIViewController {
     @IBAction func didClickDepartureButton(_ sender: UIButton) {
         locationFlag = 1
 
-        print("Execute!")
-
         picker.delegate = self
         picker.frame = CGRect.init(x: 0.0, y: UIScreen.main.bounds.size.height - 300, width: UIScreen.main.bounds.size.width, height: 300)
         picker.backgroundColor = .white
