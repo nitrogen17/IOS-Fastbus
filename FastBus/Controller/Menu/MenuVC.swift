@@ -35,6 +35,7 @@ class MenuVC: UIViewController {
                               "Manila",
                               "Pasay",
                               "Cubao"]
+    
     private var selectedRoute: String? = ""
 
     private var locationFlag: Int = 0
